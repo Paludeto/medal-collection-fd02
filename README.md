@@ -82,8 +82,8 @@ Organização do código em arquivos .c e .h, evitando o uso de variáveis globa
       <li><strong>util.h:</strong> Declara funções utilitárias usadas em várias partes do programa.</li>
       <li><strong>gui.h:</strong> Declara funções relacionadas à interface gráfica usando GTK.</li>
       <li><strong>records.h:</strong> Declara funções para exibir e gerenciar os recordes.</li>
-      <li><strong>sports.h:</strong> Declara funções para exibir informações sobre modalidades esportivas.</li>
-      <li><strong>country.h:</strong> Declara funções para exibir informações sobre os países.</li>
+      <li><strong>esportes.h:</strong> Declara funções para exibir informações sobre modalidades esportivas.</li>
+      <li><strong>pais.h:</strong> Declara funções para exibir informações sobre os países.</li>
     </ul>
   </li>
   <li>
@@ -94,8 +94,8 @@ Organização do código em arquivos .c e .h, evitando o uso de variáveis globa
       <li><strong>util.c:</strong> Implementa funções utilitárias, como limpar a tela e pausar a execução.</li>
       <li><strong>gui.c:</strong> Implementa as funções para a interface gráfica usando GTK.</li>
       <li><strong>records.c:</strong> Implementa as funções para exibir e gerenciar os recordes.</li>
-      <li><strong>sports.c:</strong> Implementa as funções para exibir informações sobre modalidades esportivas.</li>
-      <li><strong>country.c:</strong> Implementa as funções para exibir informações sobre os países.</li>
+      <li><strong>esportes.c:</strong> Implementa as funções para exibir informações sobre modalidades esportivas.</li>
+      <li><strong>pais.c:</strong> Implementa as funções para exibir informações sobre os países.</li>
       <li><strong>main.c:</strong> Contém a função main, que é o ponto de entrada do programa. Ele carrega os dados, exibe a mensagem de boas-vindas e o menu, e salva os dados ao sair do programa.</li>
     </ul>
   </li>
