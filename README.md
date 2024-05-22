@@ -1,6 +1,6 @@
 # Projeto Medal Collection
 
-Descrição do Projeto
+## Descrição do Projeto
 Neste projeto, os alunos foram incumbidos de desenvolver um sistema em linguagem C para gerenciar medalhas olímpicas, denominado Medal Collection. O sistema deve ser desenvolvido em grupos de três alunos e deve aplicar os conceitos aprendidos em sala de aula. O sistema deve abranger os seguintes aspectos:
 
 Definição da estrutura Medalha, incluindo campos como código, gênero, modalidade, cidade, ano, tipo de medalha (ouro, prata, bronze), nome do atleta, país de origem e resultado.
