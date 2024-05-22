@@ -12,8 +12,10 @@ int main() {
     int contador = 0;
 
     if(arq == NULL) {
+
         fprintf(stderr, "Erro ao abrir o arquivo\n");
         exit(EXIT_FAILURE);
+        
     }
 
     while (contador < NUM_MEDALHAS) {
@@ -34,7 +36,7 @@ int main() {
 
         printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
                     medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
-                    
+
     }
 
     fclose(arq);
