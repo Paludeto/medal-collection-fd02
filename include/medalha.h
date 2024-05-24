@@ -1,8 +1,11 @@
 #ifndef MEDALHA_H
 #define MEDALHA_H
 
+#include<stdio.h>
+#include<stdlib.h>
+
 #define TAM_STRING 64
-#define NUM_MEDALHAS 2394
+
 
 typedef struct Medalha {
     char nome[TAM_STRING]; 
@@ -15,5 +18,9 @@ typedef struct Medalha {
     int ano;
     int codigo;
 } Medalha;
+
+int linhasArquivo(FILE*);
+
+void parseArquivo(FILE *,int ,Medalha*);
 
 #endif
