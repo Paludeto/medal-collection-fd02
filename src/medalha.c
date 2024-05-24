@@ -1,38 +1,44 @@
 #include "../include/medalha.h"
-#include<stdlib.h>
-#include<stdio.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 
-int linhasArquivo(FILE *arq){
+int linhasArquivo(FILE *arq) {
 
-   int NUM_MEDALHAS = 0;
+   int contaLinhas = 0;
+
+    if (arq == NULL) {
+
+        fprintf(stderr, "Erro ao abrir o arquivo\n");
+        exit(EXIT_FAILURE);  
+
+    }
 
    char c;
    while ((c = getc(arq)) != EOF) {
+
         if (c == '\n') {
-            NUM_MEDALHAS++;
+            contaLinhas++;
         }
+        
     }
+
+    return contaLinhas++;
     
-    NUM_MEDALHAS++; // Adiciona o indice da linha que está faltando
+}
 
-    return NUM_MEDALHAS;
-    
-   }
-
-void parseArquivo(FILE *arq,int NUM_MEDALHAS,Medalha* medalhas){
-
+void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
 
     int contador = 0;
 
-    if(arq == NULL) {
+    if (arq == NULL) {
 
         fprintf(stderr, "Erro ao abrir o arquivo\n");
         exit(EXIT_FAILURE);
         
     }
 
-    while (contador < NUM_MEDALHAS) {
+    while (contador < numLinhas) {
 
         int campos = fscanf(arq, "%c,%63[^,],%63[^,],%d,%c,%63[^,],%63[^,],%63[^\n]\n",
                     &medalhas[contador].genero, medalhas[contador].modalidade, medalhas[contador].cidade, &medalhas[contador].ano, &medalhas[contador].gbs,
@@ -54,4 +60,5 @@ void parseArquivo(FILE *arq,int NUM_MEDALHAS,Medalha* medalhas){
     }
 
     fclose(arq);
+
 }

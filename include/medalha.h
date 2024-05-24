@@ -6,7 +6,6 @@
 
 #define TAM_STRING 64
 
-
 typedef struct Medalha {
     char nome[TAM_STRING]; 
     char pais[TAM_STRING];
@@ -19,8 +18,8 @@ typedef struct Medalha {
     int codigo;
 } Medalha;
 
-int linhasArquivo(FILE*);
+int linhasArquivo(FILE *);
 
-void parseArquivo(FILE *,int ,Medalha*);
+void parseArquivo(FILE *, int, Medalha*);
 
 #endif
