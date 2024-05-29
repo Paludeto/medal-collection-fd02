@@ -67,18 +67,8 @@ void escreveArquivo(int numLinhas,Medalha* medalhas){
 
 FILE *arq_dat = fopen("data/medalha.dat","w");
 
-char linha[TAM_LINHA] = "";
 
-for (int i = 0; i < numLinhas; i++)
-{
-    sprintf(linha,"%c,%s,%s,%d,%c,%s,%s,%s\n",medalhas[i].genero,medalhas[i].modalidade,medalhas[i].cidade,
-    medalhas[i].ano,medalhas[i].gbs,medalhas[i].nome,medalhas[i].pais,medalhas[i].resultado);
-    
-
-    fwrite(linha,sizeof(char),TAM_LINHA,arq_dat);
-    
-
-}
+fwrite(medalhas,sizeof(Medalha),numLinhas,arq_dat);
 
 
 fclose(arq_dat);
