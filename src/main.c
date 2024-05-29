@@ -16,6 +16,9 @@ int main() {
     
     parseArquivo(arq, numLinhas, medalhas);
 
+    escreveArquivo(numLinhas,medalhas);
+
+    
     return 0;
 
 }

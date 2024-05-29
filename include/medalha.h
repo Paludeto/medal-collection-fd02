@@ -5,6 +5,7 @@
 #include<stdlib.h>
 
 #define TAM_STRING 64
+#define TAM_LINHA 1024
 
 typedef struct Medalha {
     char nome[TAM_STRING]; 
@@ -21,5 +22,8 @@ typedef struct Medalha {
 int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
+
+void escreveArquivo(int numLinhas, Medalha*);
+
 
 #endif

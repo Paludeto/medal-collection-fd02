@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 
-int linhasArquivo(FILE *arq) {
+int linhasArquivo(FILE *arq){
 
-   int contaLinhas = 0;
+   int contaLinhas = 1;
 
     if (arq == NULL) {
 
@@ -23,7 +23,7 @@ int linhasArquivo(FILE *arq) {
         
     }
 
-    return contaLinhas++;
+    return contaLinhas;
     
 }
 
@@ -60,5 +60,27 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
     }
 
     fclose(arq);
+
+}
+
+void escreveArquivo(int numLinhas,Medalha* medalhas){
+
+FILE *arq_dat = fopen("data/medalha.dat","w");
+
+char linha[TAM_LINHA] = "";
+
+for (int i = 0; i < numLinhas; i++)
+{
+    sprintf(linha,"%c,%s,%s,%d,%c,%s,%s,%s\n",medalhas[i].genero,medalhas[i].modalidade,medalhas[i].cidade,
+    medalhas[i].ano,medalhas[i].gbs,medalhas[i].nome,medalhas[i].pais,medalhas[i].resultado);
+    
+
+    fputs(linha,arq_dat);
+    
+
+}
+
+
+fclose(arq_dat);
 
 }
