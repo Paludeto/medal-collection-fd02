@@ -75,7 +75,7 @@ for (int i = 0; i < numLinhas; i++)
     medalhas[i].ano,medalhas[i].gbs,medalhas[i].nome,medalhas[i].pais,medalhas[i].resultado);
     
 
-    fputs(linha,arq_dat);
+    fwrite(linha,sizeof(char),TAM_LINHA,arq_dat);
     
 
 }
