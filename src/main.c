@@ -7,8 +7,10 @@ int main() {
 
     FILE *arq;
 
+
     arq = fopen("data/medalhas.csv", "r");
-    int numLinhas = linhasArquivo(arq);  
+    
+    int numLinhas = linhasArquivo(arq); 
 
     Medalha medalhas[numLinhas];
 
@@ -16,7 +18,11 @@ int main() {
     
     parseArquivo(arq, numLinhas, medalhas);
 
-    escreveArquivo(numLinhas,medalhas);
+    escreveArquivo(medalhas);
+
+    arq = fopen("data/medalha.dat", "rb");
+    
+    leArquivo(arq,medalhas,2393);
 
     
     return 0;
