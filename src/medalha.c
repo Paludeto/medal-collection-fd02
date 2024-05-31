@@ -52,25 +52,33 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
 
     }
 
-    for (int i = 0; i < contador; i++) {  
-
-        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
-                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
-
-    }
 
     fclose(arq);
 
 }
 
-void escreveArquivo(int numLinhas,Medalha* medalhas){
+void escreveArquivo(Medalha* medalhas){
 
 FILE *arq_dat = fopen("data/medalha.dat","w");
 
 
-fwrite(medalhas,sizeof(Medalha),numLinhas,arq_dat);
+fwrite(medalhas,1,sizeof(Medalha),arq_dat);
 
 
 fclose(arq_dat);
 
+}
+
+void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
+
+    fread(medalhas,numLinhas,sizeof(Medalha),arq);
+
+    
+    for (int i = 0; i < numLinhas; i++) {  
+
+        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
+                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
+
+    }
+    printf("funciona");
 }
