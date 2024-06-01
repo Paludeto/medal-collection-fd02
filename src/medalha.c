@@ -51,28 +51,46 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
         contador++;
 
     }
+    for (int i = 0; i < numLinhas; i++) {  
 
+        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
+                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
 
+    }
     fclose(arq);
 
 }
 
-void escreveArquivo(Medalha* medalhas){
+void escreveArquivo(Medalha* medalhas, int numLinhas){
 
-FILE *arq_dat = fopen("data/medalha.dat","w");
+FILE *arq_dat = fopen("data/medalhas.dat","wb");
+FILE *num_medalhas = fopen("data/num.dat","wb");
 
 
-fwrite(medalhas,1,sizeof(Medalha),arq_dat);
+fwrite(medalhas,numLinhas,sizeof(Medalha),arq_dat);
 
+fwrite(&numLinhas,1,sizeof(int),num_medalhas);
 
 fclose(arq_dat);
 
+fclose(num_medalhas);
+
+}
+
+int leNumero(FILE * numMedalhas){
+
+    int numLinhas;
+
+    fread(&numLinhas,sizeof(int),1,numMedalhas);
+    
+
+    return numLinhas;
 }
 
 void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
 
+    
     fread(medalhas,numLinhas,sizeof(Medalha),arq);
-
     
     for (int i = 0; i < numLinhas; i++) {  
 
@@ -81,4 +99,7 @@ void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
 
     }
     printf("funciona");
+    
 }
+
+

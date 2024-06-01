@@ -23,8 +23,12 @@ int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
 
-void escreveArquivo( Medalha*);
+void escreveArquivo( Medalha*, int numLinhas);
 
-void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas);
+void leArquivo(FILE *arq, Medalha* medalhas,int numLinhas);
+
+int leNumero(FILE * numMedalhas);
+
+void modificaAtleta(Medalha** medalhas);
 
 #endif

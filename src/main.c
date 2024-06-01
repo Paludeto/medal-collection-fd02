@@ -6,25 +6,44 @@
 int main() {
 
     FILE *arq;
-
-
-    arq = fopen("data/medalhas.csv", "r");
+    FILE *numMedalhas;
     
-    int numLinhas = linhasArquivo(arq); 
+    int numLinhas = 0;
+    
+    arq = fopen("data/medalhas.dat", "r+b");
 
+    numMedalhas = fopen("data/num.dat","rb");  
+    if (arq == NULL)
+    {   
+
+        arq = fopen("data/medalhas.csv","r");
+        
+        numLinhas = linhasArquivo(arq); 
+
+        rewind(arq);
+        
+        Medalha medalhas[numLinhas];
+       
+        parseArquivo(arq, numLinhas, medalhas);
+
+        //Menu vai aqui
+
+        escreveArquivo(medalhas,numLinhas);
+
+    
+    }
+   
+    numLinhas = leNumero(numMedalhas);
+    
     Medalha medalhas[numLinhas];
 
-    rewind(arq);
+    leArquivo(arq,medalhas,numLinhas);
+
+    //Menu Vai aqui
     
-    parseArquivo(arq, numLinhas, medalhas);
-
-    escreveArquivo(medalhas);
-
-    arq = fopen("data/medalha.dat", "rb");
-    
-    leArquivo(arq,medalhas,2393);
-
     
     return 0;
+    }
+    
+    
 
-}
