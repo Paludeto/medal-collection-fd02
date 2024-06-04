@@ -28,6 +28,8 @@ int main() {
         parseArquivo(arq, numLinhas, medalhas);
 
         escreveBinario(medalhas, numLinhas);
+
+        fclose(arq);
     
     }
 
@@ -40,11 +42,11 @@ int main() {
 
         leBinario(arq, medalhas, numLinhas);
 
+        fclose(numMedalhas);
+        fclose(arq);
+
     } 
     
     return 0;
 
 }
-    
-    
-
