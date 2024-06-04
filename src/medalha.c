@@ -54,6 +54,8 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas) {
     
     fclose(arq);
 
+    return;
+
 }
 
 void escreveBinario(Medalha* medalhas, int numLinhas) {
@@ -69,6 +71,8 @@ void escreveBinario(Medalha* medalhas, int numLinhas) {
     fclose(arq_dat);
 
     fclose(num_medalhas);
+
+    return;
 
 }
 
@@ -92,5 +96,7 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
                     medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
 
     }
+
+    return;
     
 }
