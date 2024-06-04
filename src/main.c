@@ -12,9 +12,10 @@ int main() {
     
     arq = fopen("data/medalhas.dat", "r+b");
 
-    numMedalhas = fopen("data/num.dat","rb");  
-    if (arq == NULL)
-    {   
+    numMedalhas = fopen("data/num.dat", "rb");  
+
+    //Se for a primeira execução do programa...
+    if (arq == NULL) {   
 
         arq = fopen("data/medalhas.csv","r");
         
@@ -22,28 +23,28 @@ int main() {
 
         rewind(arq);
         
-        Medalha medalhas[numLinhas];
+        Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
        
         parseArquivo(arq, numLinhas, medalhas);
 
-        //Menu vai aqui
-
-        escreveArquivo(medalhas,numLinhas);
-
+        escreveBinario(medalhas, numLinhas);
     
     }
-   
-    numLinhas = leNumero(numMedalhas);
-    
-    Medalha medalhas[numLinhas];
 
-    leArquivo(arq,medalhas,numLinhas);
+    //Se não for a primeira execução, ler do binário
+    if (numMedalhas != NULL) {
 
-    //Menu Vai aqui
+        numLinhas = leLinhasBinario(numMedalhas);
     
+        Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
+
+        leBinario(arq, medalhas, numLinhas);
+
+    } 
     
     return 0;
-    }
+
+}
     
     
 

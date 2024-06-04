@@ -23,11 +23,11 @@ int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
 
-void escreveArquivo( Medalha*, int numLinhas);
+void escreveBinario( Medalha*, int numLinhas);
 
-void leArquivo(FILE *arq, Medalha* medalhas,int numLinhas);
+void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 
-int leNumero(FILE * numMedalhas);
+int leLinhasBinario(FILE * numMedalhas);
 
 void modificaAtleta(Medalha** medalhas);
 

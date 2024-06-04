@@ -3,9 +3,9 @@
 #include <stdio.h>
 
 
-int linhasArquivo(FILE *arq){
+int linhasArquivo(FILE *arq) {
 
-   int contaLinhas = 1;
+    int contaLinhas = 1;
 
     if (arq == NULL) {
 
@@ -27,7 +27,7 @@ int linhasArquivo(FILE *arq){
     
 }
 
-void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
+void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas) {
 
     int contador = 0;
 
@@ -44,53 +44,47 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
                     &medalhas[contador].genero, medalhas[contador].modalidade, medalhas[contador].cidade, &medalhas[contador].ano, &medalhas[contador].gbs,
                     medalhas[contador].nome, medalhas[contador].pais, medalhas[contador].resultado);
 
-        if (campos == EOF){ //Por recomendação do professor.
+        if (campos == EOF) { 
             break;
         }
 
         contador++;
 
     }
-    for (int i = 0; i < numLinhas; i++) {  
-
-        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
-                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
-
-    }
+    
     fclose(arq);
 
 }
 
-void escreveArquivo(Medalha* medalhas, int numLinhas){
+void escreveBinario(Medalha* medalhas, int numLinhas) {
 
-FILE *arq_dat = fopen("data/medalhas.dat","wb");
-FILE *num_medalhas = fopen("data/num.dat","wb");
+    FILE *arq_dat = fopen("data/medalhas.dat","wb");
+    FILE *num_medalhas = fopen("data/num.dat","wb");
 
 
-fwrite(medalhas,numLinhas,sizeof(Medalha),arq_dat);
+    fwrite(medalhas,numLinhas,sizeof(Medalha),arq_dat);
 
-fwrite(&numLinhas,1,sizeof(int),num_medalhas);
+    fwrite(&numLinhas,1,sizeof(int),num_medalhas);
 
-fclose(arq_dat);
+    fclose(arq_dat);
 
-fclose(num_medalhas);
+    fclose(num_medalhas);
 
 }
 
-int leNumero(FILE * numMedalhas){
+int leLinhasBinario(FILE *numMedalhas) {
 
     int numLinhas;
 
-    fread(&numLinhas,sizeof(int),1,numMedalhas);
-    
+    fread(&numLinhas, sizeof(int), 1, numMedalhas);
 
     return numLinhas;
+
 }
 
-void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
-
+void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
     
-    fread(medalhas,numLinhas,sizeof(Medalha),arq);
+    fread(medalhas, numLinhas, sizeof(Medalha), arq);
     
     for (int i = 0; i < numLinhas; i++) {  
 
@@ -98,8 +92,5 @@ void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
                     medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
 
     }
-    printf("funciona");
     
 }
-
-
