@@ -29,24 +29,22 @@ int main() {
 
         escreveBinario(medalhas, numLinhas);
 
-        fclose(arq);
+        free(medalhas);
     
-    }
-
-    //Se não for a primeira execução, ler do binário
+    } 
+    
     if (numMedalhas != NULL) {
 
         numLinhas = leLinhasBinario(numMedalhas);
     
         Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
 
-        leBinario(arq, medalhas, numLinhas);
+        leBinario(arq, medalhas, numLinhas);  
+        
+        free(medalhas);
 
-        fclose(numMedalhas);
-        fclose(arq);
+    }
 
-    } 
-    
     return 0;
 
 }

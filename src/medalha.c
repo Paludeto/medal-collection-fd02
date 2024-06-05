@@ -97,6 +97,8 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
 
     }
 
+    fclose(arq);
+    
     return;
     
 }
