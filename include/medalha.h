@@ -31,7 +31,7 @@ int leLinhasBinario(FILE * numMedalhas);
 
 void modificaAtleta(Medalha** medalhas, int tamanhoArray);
 
-int buscaAtleta(Medalha **medalhas, int tamanhoArray, char nomeBuscado[TAM_STRING]);
+int buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void exibeAtleta(Medalha **medalhas, int indice);
 
