@@ -118,9 +118,16 @@ void exibeAtleta(Medalha **medalhas, int indice) {
 }
 
 int buscaAtleta(Medalha **medalhas, int tamanhoArray, char nomeBuscado[TAM_STRING]) {
+    
+    printf("Digite o nome do atleta que você deseja buscar\n");
+
+    char nomeBuscado[TAM_STRING];
+    fgets(nomeBuscado, TAM_STRING, stdin);
+    nomeBuscado[strcspn(nomeBuscado, "\n")] = '\0';
 
     for (int i = 0; i < tamanhoArray; i++) {
         if (strcmp(nomeBuscado, medalhas[i]->nome) == 0) {
+            exibeAtleta(medalhas, i);
             return i;
         }
     }
@@ -143,10 +150,6 @@ void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
     };
 
     int opcao;
-
-    char nomeBuscado[TAM_STRING];
-    fgets(nomeBuscado, TAM_STRING, stdin);
-    nomeBuscado[strcspn(nomeBuscado, "\n")] = '\0';
 
     int indice = buscaAtleta(medalhas, tamanhoArray, nomeBuscado);
 
