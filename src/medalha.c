@@ -109,7 +109,7 @@ void exibeAtleta(Medalha **medalhas, int indice) {
     printf("%-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t |\n",
         "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAÍS", "RESULTADO");   
     
-    printf("%-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t |\n",
+    printf("%-10c\t | %-10s\t | %-10s\t | %-10d\t | %-10c\t | %-10s\t | %-10s\t | %-10s\t |\n",
         medalhas[indice]->genero, medalhas[indice]->modalidade, medalhas[indice]->cidade, medalhas[indice]->ano, 
         medalhas[indice]->gbs, medalhas[indice]->nome, medalhas[indice]->pais, medalhas[indice]->resultado);  
 
@@ -131,7 +131,7 @@ int buscaAtleta(Medalha **medalhas, int tamanhoArray, char nomeBuscado[TAM_STRIN
 
 void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
 
-    typedef enum OPCOES {
+    enum {
         GENERO = 1,
         MODALIDADE,
         CIDADE, 
@@ -141,6 +141,8 @@ void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
         PAIS,
         RESULTADO
     };
+
+    int opcao;
 
     char nomeBuscado[TAM_STRING];
     fgets(nomeBuscado, TAM_STRING, stdin);
@@ -157,8 +159,51 @@ void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
 
     printf("Qual campo do atleta você deseja modificar?\n");
     printf("1 - GÊNERO\n2 - MODALIDADE\n3 - CIDADE\n4 - ANO\n 5 - GBS\n6 - NOME\n7 - PAIS\n8 - RESULTADO\n");
-    
-    //inacabada
-    return;
+    scanf("%d", &opcao);
 
+    while (opcao < 1 || opcao > 8) {
+        printf("Digite um valor válido!\n");
+        printf("1 - GÊNERO\n2 - MODALIDADE\n3 - CIDADE\n4 - ANO\n 5 - GBS\n6 - NOME\n7 - PAIS\n8 - RESULTADO\n");
+        scanf("%d", &opcao);
+    }
+
+    switch (opcao) {
+
+        case GENERO:
+
+            printf("Digite um novo gênero (W ou M) para o atleta %s\n", medalhas[indice]->nome);
+            scanf("%c", &medalhas[indice]->genero);
+
+            while (medalhas[indice]->genero != 'W' || medalhas[indice]->genero != 'M') {
+                printf("Digite apenas W ou M\n");
+                scanf("%c", &medalhas[indice]->genero);
+            }
+
+            break;
+
+        case MODALIDADE:
+        
+            printf("Digite uma nova modalidade para o atleta %s\n", medalhas[indice]->nome);
+            fgets(medalhas[indice]->modalidade, TAM_STRING, stdin);
+
+            //inacabada
+
+            break;
+        case CIDADE:
+            break;
+        case ANO:
+            break;
+        case GBS:
+            break;
+        case NOME:
+            break;
+        case PAIS:
+            break;
+        case RESULTADO:
+            break;
+
+    }
+
+    return;
+    
 }
