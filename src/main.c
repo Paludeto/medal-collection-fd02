@@ -7,7 +7,6 @@ int main() {
 
     FILE *arq;
     FILE *numMedalhas;
-    Medalha *medalhas;
     
     int numLinhas = 0;
     
