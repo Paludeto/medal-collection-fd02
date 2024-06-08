@@ -29,22 +29,21 @@ int main() {
 
         escreveBinario(medalhas, numLinhas);
         printf("funciona");
+
         //Menu vai aqui
 
         free(medalhas);
-
     
-    } 
     
-    if (numMedalhas != NULL) {
-
-     numLinhas = leLinhasBinario(numMedalhas);
-    
-    Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
+    }
+   
+    numLinhas = leLinhasBinario(numMedalhas);
     
     int *tamanhoMedalhas = &numLinhas;
 
-    leBinario(arq,medalhas,numLinhas);
+    Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
+
+    leBinario(arq,medalhas,*tamanhoMedalhas);
 
     //Menu Vai aqui
     
@@ -54,10 +53,10 @@ int main() {
     //teste, confirma tamanho do vetor de structs
     printf("%d",numLinhas);
                                                                                                           
-        
-     free(medalhas);
-    }
+    free(medalhas); 
 
     return 0;
+    }
+    
+    
 
-}

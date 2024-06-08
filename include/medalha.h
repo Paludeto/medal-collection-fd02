@@ -29,7 +29,7 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 
 int leLinhasBinario(FILE * numMedalhas);
 
-void inserirAtleta(Medalha* medalhas, int *numLinhas, int tamanhoArray);
+void inserirAtleta(Medalha* medalhas, int *numLinhas);
 
 int buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
