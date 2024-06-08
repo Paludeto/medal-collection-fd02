@@ -2,11 +2,12 @@
 #include "../include/utilidades.h"
 #include <stdlib.h>
 #include <stdio.h>
+#include <ctype.h>
 #include <string.h>
+#include <string.h>
+int linhasArquivo(FILE *arq) {
 
-int linhasArquivo(FILE *arq){
-
-   int contaLinhas = 1;
+    int contaLinhas = 1;
 
     if (arq == NULL) {
 
@@ -28,7 +29,7 @@ int linhasArquivo(FILE *arq){
     
 }
 
-void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
+void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas) {
 
     int contador = 0;
 
@@ -45,47 +46,51 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
                     &medalhas[contador].genero, medalhas[contador].modalidade, medalhas[contador].cidade, &medalhas[contador].ano, &medalhas[contador].gbs,
                     medalhas[contador].nome, medalhas[contador].pais, medalhas[contador].resultado);
 
-        if (campos == EOF){ //Por recomendação do professor.
+        if (campos == EOF) { 
             break;
         }
 
         contador++;
 
     }
+    
     fclose(arq);
 
-}
-
-void escreveArquivo(Medalha* medalhas, int numLinhas){
-
-FILE *arq_dat = fopen("data/medalhas.dat","wb");
-FILE *num_medalhas = fopen("data/num.dat","wb");
-
-
-fwrite(medalhas,numLinhas,sizeof(Medalha),arq_dat);
-
-fwrite(&numLinhas,1,sizeof(int),num_medalhas);
-
-fclose(arq_dat);
-
-fclose(num_medalhas);
+    return;
 
 }
 
-int leNumero(FILE * numMedalhas){
+void escreveBinario(Medalha* medalhas, int numLinhas) {
+
+    FILE *arq_dat = fopen("data/medalhas.dat","wb");
+    FILE *num_medalhas = fopen("data/num.dat","wb");
+
+
+    fwrite(medalhas,numLinhas,sizeof(Medalha),arq_dat);
+
+    fwrite(&numLinhas,1,sizeof(int),num_medalhas);
+
+    fclose(arq_dat);
+
+    fclose(num_medalhas);
+
+    return;
+
+}
+
+int leLinhasBinario(FILE *numMedalhas) {
 
     int numLinhas;
 
-    fread(&numLinhas,sizeof(int),1,numMedalhas);
-    
+    fread(&numLinhas, sizeof(int), 1, numMedalhas);
 
     return numLinhas;
+
 }
 
-void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
-
+void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
     
-    fread(medalhas,numLinhas,sizeof(Medalha),arq);
+    fread(medalhas, numLinhas, sizeof(Medalha), arq);
     
     for (int i = 0; i < numLinhas; i++) {  
 
@@ -140,8 +145,109 @@ void inserirAtleta(Medalha* medalhas,int *numLinhas){
     }
 
 
-    
+void exibeAtleta(Medalha **medalhas, int indice) {
 
+    printf("%-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t |\n",
+        "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAÍS", "RESULTADO");   
     
+    printf("%-10c\t | %-10s\t | %-10s\t | %-10d\t | %-10c\t | %-10s\t | %-10s\t | %-10s\t |\n",
+        medalhas[indice]->genero, medalhas[indice]->modalidade, medalhas[indice]->cidade, medalhas[indice]->ano, 
+        medalhas[indice]->gbs, medalhas[indice]->nome, medalhas[indice]->pais, medalhas[indice]->resultado);  
 
+    return;
+
+}
+
+int buscaAtleta(Medalha **medalhas, int tamanhoArray) {
+
+    printf("Digite o nome do atleta a ser buscado\n");
+
+    char nomeBuscado[TAM_STRING];
+    fgets(nomeBuscado, TAM_STRING, stdin);
+    nomeBuscado[strcspn(nomeBuscado, "\n")] = '\0';
+
+    for (int i = 0; i < tamanhoArray; i++) {
+        if (strcmp(nomeBuscado, medalhas[i]->nome) == 0) {
+            exibeAtleta(medalhas, i);
+            return i;
+        }
+    }
+
+    return -1;
+
+}
+
+void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
+
+    enum {
+        GENERO = 1,
+        MODALIDADE,
+        CIDADE, 
+        ANO,
+        GBS, 
+        NOME,
+        PAIS,
+        RESULTADO
+    };
+
+    int opcao;
+
+    int indice = buscaAtleta(medalhas, tamanhoArray);
+
+    if (indice == -1) {
+        perror("Atleta não encontrado!\n");
+        return;
+    }
+
+    exibeAtleta(medalhas, indice);
+
+    printf("Qual campo do atleta você deseja modificar?\n");
+    printf("1 - GÊNERO\n2 - MODALIDADE\n3 - CIDADE\n4 - ANO\n 5 - GBS\n6 - NOME\n7 - PAIS\n8 - RESULTADO\n");
+    scanf("%d", &opcao);
+
+    while (opcao < 1 || opcao > 8) {
+        printf("Digite um valor válido!\n");
+        printf("1 - GÊNERO\n2 - MODALIDADE\n3 - CIDADE\n4 - ANO\n 5 - GBS\n6 - NOME\n7 - PAIS\n8 - RESULTADO\n");
+        scanf("%d", &opcao);
+    }
+
+    switch (opcao) {
+
+        case GENERO:
+
+            printf("Digite um novo gênero (W ou M) para o atleta %s\n", medalhas[indice]->nome);
+            scanf("%c", &medalhas[indice]->genero);
+
+            while (medalhas[indice]->genero != 'W' || medalhas[indice]->genero != 'M') {
+                printf("Digite apenas W ou M\n");
+                scanf("%c", &medalhas[indice]->genero);
+            }
+
+            break;
+
+        case MODALIDADE:
+        
+            printf("Digite uma nova modalidade para o atleta %s\n", medalhas[indice]->nome);
+            fgets(medalhas[indice]->modalidade, TAM_STRING, stdin);
+
+            //inacabada
+
+            break;
+        case CIDADE:
+            break;
+        case ANO:
+            break;
+        case GBS:
+            break;
+        case NOME:
+            break;
+        case PAIS:
+            break;
+        case RESULTADO:
+            break;
+
+    }
+
+    return;
     
+}

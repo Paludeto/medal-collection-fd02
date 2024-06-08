@@ -12,9 +12,10 @@ int main() {
     
     arq = fopen("data/medalhas.dat", "r+b");
 
-    numMedalhas = fopen("data/num.dat","rb");  
-    if (arq == NULL)
-    {   
+    numMedalhas = fopen("data/num.dat", "rb");  
+
+    //Se for a primeira execução do programa...
+    if (arq == NULL) {   
 
         arq = fopen("data/medalhas.csv","r");
         
@@ -22,26 +23,28 @@ int main() {
 
         rewind(arq);
         
-        Medalha* medalhas=(Medalha*) malloc (numLinhas * sizeof(Medalha));
+        Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
        
         parseArquivo(arq, numLinhas, medalhas);
+
+        escreveBinario(medalhas, numLinhas);
         printf("funciona");
         //Menu vai aqui
 
-        escreveArquivo(medalhas,numLinhas);
-
         free(medalhas);
+
     
+    } 
     
-    }
-   
-    numLinhas = leNumero(numMedalhas);
+    if (numMedalhas != NULL) {
+
+     numLinhas = leLinhasBinario(numMedalhas);
+    
+    Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
     
     int *tamanhoMedalhas = &numLinhas;
 
-    Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
-
-    leArquivo(arq,medalhas,numLinhas);
+    leBinario(arq,medalhas,numLinhas);
 
     //Menu Vai aqui
     
@@ -51,10 +54,10 @@ int main() {
     //teste, confirma tamanho do vetor de structs
     printf("%d",numLinhas);
                                                                                                           
-    free(medalhas); 
+        
+     free(medalhas);
+    }
 
     return 0;
-    }
-    
-    
 
+}
