@@ -29,6 +29,6 @@ void leArquivo(FILE *arq, Medalha* medalhas,int numLinhas);
 
 int leNumero(FILE * numMedalhas);
 
-void modificaAtleta(Medalha** medalhas);
+void inserirAtleta(Medalha* medalhas, int *numLinhas);
 
 #endif

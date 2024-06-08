@@ -1,7 +1,8 @@
 #include "../include/medalha.h"
+#include "../include/utilidades.h"
 #include <stdlib.h>
 #include <stdio.h>
-
+#include <string.h>
 
 int linhasArquivo(FILE *arq){
 
@@ -51,12 +52,6 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas){
         contador++;
 
     }
-    for (int i = 0; i < numLinhas; i++) {  
-
-        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
-                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
-
-    }
     fclose(arq);
 
 }
@@ -98,8 +93,55 @@ void leArquivo(FILE *arq,Medalha* medalhas,int numLinhas){
                     medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
 
     }
-    printf("funciona");
+    printf("funciona\n");
+    
     
 }
 
+void inserirAtleta(Medalha* medalhas,int *numLinhas){
 
+
+    medalhas = realloc(medalhas,((*numLinhas + 1)*sizeof(Medalha)));
+    
+    *numLinhas = *numLinhas+1;
+
+    printf("Insira o genero do atleta:");
+    scanf("%c",&medalhas[*numLinhas].genero);
+
+    setbuf(stdin, NULL);
+    
+    printf("Insira o nome:");
+    recebeString(medalhas[*numLinhas].nome);
+
+    printf("Insira a modalidade: ");
+    recebeString(medalhas[*numLinhas].modalidade);
+
+    printf("Insira o pais:");
+    recebeString(medalhas[*numLinhas].pais);
+
+    printf("Insira a cidade:");
+    recebeString(medalhas[*numLinhas].cidade);
+
+    printf("Insira o ano:");
+    scanf("%d",&medalhas[*numLinhas].ano);
+
+    setbuf(stdin, NULL);
+
+    printf("Insira o resultado:");
+    recebeString(medalhas[*numLinhas].resultado);
+
+    printf("Insira a medalha:");
+    scanf("%c",&medalhas[*numLinhas].gbs);
+
+     printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[*numLinhas].genero, medalhas[*numLinhas].modalidade, 
+         medalhas[*numLinhas].cidade, medalhas[*numLinhas].ano, medalhas[*numLinhas].gbs,
+         medalhas[*numLinhas].nome, medalhas[*numLinhas].pais, medalhas[*numLinhas].resultado);
+
+    }
+
+
+    
+
+    
+
+    

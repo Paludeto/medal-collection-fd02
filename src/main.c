@@ -22,26 +22,37 @@ int main() {
 
         rewind(arq);
         
-        Medalha medalhas[numLinhas];
+        Medalha* medalhas=(Medalha*) malloc (numLinhas * sizeof(Medalha));
        
         parseArquivo(arq, numLinhas, medalhas);
-
+        printf("funciona");
         //Menu vai aqui
 
         escreveArquivo(medalhas,numLinhas);
 
+        free(medalhas);
+    
     
     }
    
     numLinhas = leNumero(numMedalhas);
     
-    Medalha medalhas[numLinhas];
+    int *tamanhoMedalhas = &numLinhas;
+
+    Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
 
     leArquivo(arq,medalhas,numLinhas);
 
     //Menu Vai aqui
     
+    // teste
+    inserirAtleta(medalhas,tamanhoMedalhas);
     
+    //teste, confirma tamanho do vetor de structs
+    printf("%d",numLinhas);
+                                                                                                          
+    free(medalhas); 
+
     return 0;
     }
     
