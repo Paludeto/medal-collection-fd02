@@ -50,8 +50,13 @@ int main() {
     // teste
     inserirAtleta(medalhas,tamanhoMedalhas);
     
+    printf("%s",medalhas[0].nome);
+
+    removeAtleta(medalhas,tamanhoMedalhas);
     //teste, confirma tamanho do vetor de structs
     printf("%d",numLinhas);
+    //teste, confirma deslocamento do vetor
+    printf("%s",medalhas[0].nome);
                                                                                                           
     free(medalhas); 
 

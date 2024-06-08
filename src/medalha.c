@@ -144,7 +144,6 @@ void inserirAtleta(Medalha* medalhas,int *numLinhas){
 
     }
 
-
 void exibeAtleta(Medalha **medalhas, int indice) {
 
     printf("%-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t | %-10s\t |\n",
@@ -177,7 +176,7 @@ int buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
 }
 
-void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
+void modificaAtleta(Medalha** medalhas, int tamanhoArray) { 
 
     enum {
         GENERO = 1,
@@ -250,4 +249,35 @@ void modificaAtleta(Medalha** medalhas, int tamanhoArray) {
 
     return;
     
+}
+
+void removeAtleta(Medalha * medalhas, int *tamanhoArray){
+
+    int indice;
+
+    printf("Insira o número do atleta que deseja excluir:");
+    scanf("%d",&indice);
+
+    for (int i = 0; i < *tamanhoArray; i++)
+    {
+        if(i == indice){
+
+            for (int j = indice; j < *tamanhoArray; j++)
+            {
+               medalhas[j].ano = medalhas[j+1].ano;
+               medalhas[j].gbs = medalhas[j+1].gbs;
+               medalhas[j].genero = medalhas[j+1].genero;
+               
+               strcpy(medalhas[j].nome,medalhas[j+1].nome);
+               strcpy(medalhas[j].cidade,medalhas[j+1].cidade);
+               strcpy(medalhas[j].pais,medalhas[j+1].pais);
+               strcpy(medalhas[j].resultado,medalhas[j+1].resultado);
+               strcpy(medalhas[j].modalidade,medalhas[j+1].modalidade);
+
+    
+            }
+            
+        }
+    }
+    *tamanhoArray = *tamanhoArray-1;
 }

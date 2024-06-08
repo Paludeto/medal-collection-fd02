@@ -19,6 +19,8 @@ typedef struct Medalha {
     int codigo;
 } Medalha;
 
+
+
 int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
@@ -29,10 +31,13 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 
 int leLinhasBinario(FILE * numMedalhas);
 
-void inserirAtleta(Medalha* medalhas, int *numLinhas);
+
+void inserirAtleta(Medalha* medalhas, int *tamanhoArray);
 
 int buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void exibeAtleta(Medalha **medalhas, int indice);
+
+void removeAtleta(Medalha * medalhas,int *tamanhoArray);
 
 #endif
