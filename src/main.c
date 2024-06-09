@@ -48,7 +48,9 @@ int main() {
 
         leBinario(arq,medalhas,*tamanhoMedalhas);
 
-        exportaCsv(arq, medalhas, numLinhas);
+        escreveBinario(medalhas, numLinhas);
+
+        buscaAtleta(&medalhas, numLinhas);
 
         free(medalhas);  
 

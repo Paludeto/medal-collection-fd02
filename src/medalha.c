@@ -166,10 +166,10 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
 
 void exibeAtleta(Medalha **medalhas, int indice) {
 
-    printf("%-15s\t | %-15s\t | %-15s\t | %-15s\t | %-10s\t | %-15s\t | %-10s\t | %-15s\t |\n",
+    printf("%-5s\t | %-15s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
         "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAíS", "RESULTADO");   
     
-    printf("%-15c\t | %-15s\t | %-15s\t | %-15d\t | %-10c\t | %-15s\t | %-10s\t | %-15s\t |\n",
+    printf("%-5c\t | %-15s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
         (*medalhas)[indice].genero, (*medalhas)[indice].modalidade, (*medalhas)[indice].cidade, (*medalhas)[indice].ano, 
         (*medalhas)[indice].gbs, (*medalhas)[indice].nome, (*medalhas)[indice].pais, (*medalhas)[indice].resultado);  
 
@@ -177,7 +177,9 @@ void exibeAtleta(Medalha **medalhas, int indice) {
 
 }
 
-int buscaAtleta(Medalha **medalhas, int tamanhoArray) {
+void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
+
+    int totalMedalhas = 0;
 
     printf("Digite o nome do atleta a ser buscado\n");
 
@@ -185,15 +187,18 @@ int buscaAtleta(Medalha **medalhas, int tamanhoArray) {
     recebeString(nomeBuscado);
 
     for (int i = 0; i < tamanhoArray; i++) {
-        printf("%s\n", (*medalhas)[i].nome);
         if (strcmp(nomeBuscado, (*medalhas)[i].nome) == 0) {
-            printf("Índice do atleta: %d\n", i);
+            printf("Índice da medalha: %d\n", i);
             exibeAtleta(medalhas, i);
-            return i;
+            totalMedalhas++;
         }
     }
 
-    return -1;
+    if (totalMedalhas == 0) {
+        printf("Nenhuma medalha encontrada!\n");
+    } else {
+        printf("Total de medalhas: %d\n", totalMedalhas);
+    }
 
 }
 
@@ -211,12 +216,14 @@ void modificaAtleta(Medalha **medalhas, int tamanhoArray) {
     };
 
     int opcao;
+    int indice;
 
-    int indice = buscaAtleta(medalhas, tamanhoArray);
+    printf("Digite o índice do atleta que deseja alterar\n");
+    scanf("%d", &indice);
 
-    if (indice == -1) {
-        fprintf(stderr, "Atleta não encontrado!\n");
-        return;
+    while (indice < 0 || indice > tamanhoArray) {
+        printf("Digite um valor válido!\n");
+        scanf("%d", &indice);
     }
 
     exibeAtleta(medalhas, indice);

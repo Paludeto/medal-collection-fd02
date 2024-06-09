@@ -31,11 +31,11 @@ int leLinhasBinario(FILE * numMedalhas);
 
 void inserirAtleta(Medalha* medalhas, int *tamanhoArray);
 
-int buscaAtleta(Medalha **medalhas, int tamanhoArray);
+void buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void exibeAtleta(Medalha **medalhas, int indice);
 
-void modificaAtleta(Medalha** medalhas, int tamanhoArray);
+void modificaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void removeAtleta(Medalha * medalhas,int *tamanhoArray);
 
