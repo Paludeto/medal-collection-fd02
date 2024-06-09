@@ -1,11 +1,9 @@
 #ifndef MEDALHA_H
 #define MEDALHA_H
 
-#include<stdio.h>
-#include<stdlib.h>
-
-#define TAM_STRING 64
-#define TAM_LINHA 1024
+#include <stdio.h>
+#include <stdlib.h>
+#include "utilidades.h"
 
 typedef struct Medalha {
     char nome[TAM_STRING]; 
@@ -19,8 +17,6 @@ typedef struct Medalha {
     int codigo;
 } Medalha;
 
-
-
 int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
@@ -31,12 +27,13 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 
 int leLinhasBinario(FILE * numMedalhas);
 
-
 void inserirAtleta(Medalha* medalhas, int *tamanhoArray);
 
 int buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void exibeAtleta(Medalha **medalhas, int indice);
+
+void modificaAtleta(Medalha** medalhas, int tamanhoArray);
 
 void removeAtleta(Medalha * medalhas,int *tamanhoArray);
 

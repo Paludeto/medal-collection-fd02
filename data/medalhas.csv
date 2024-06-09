@@ -152,9 +152,9 @@ M,100M Men,Athens,1896,B,Francis LANE,USA,12.6
 M,110M Hurdles Men,Rio,2016,G,Omar MCLEOD,JAM,13.05
 M,110M Hurdles Men,Rio,2016,S,Orlando ORTEGA,ESP,13.17
 M,110M Hurdles Men,Rio,2016,B,Dimitri BASCOU,FRA,13.24
-M,110M Hurdles Men,Beijing,2008,G,Dayron ROBLES,CUB,12.93,+0.1
-M,110M Hurdles Men,Beijing,2008,S,David PAYNE,USA,13.17,+0.1
-M,110M Hurdles Men,Beijing,2008,B,David OLIVER,USA,13.18,+0.1
+M,110M Hurdles Men,Beijing,2008,G,Dayron ROBLES,CUB,13.03
+M,110M Hurdles Men,Beijing,2008,S,David PAYNE,USA,13.37
+M,110M Hurdles Men,Beijing,2008,B,David OLIVER,USA,13.38
 M,110M Hurdles Men,Sydney,2000,G,Anier GARCIA,CUB,13.0
 M,110M Hurdles Men,Sydney,2000,S,Terrence TRAMMELL,USA,13.16
 M,110M Hurdles Men,Sydney,2000,B,Mark CREAR,USA,13.22
@@ -313,9 +313,9 @@ M,1500M Men,Athens,1896,B,Albin LERMUSIAUX,FRA,4:36.0
 M,200M Men,Rio,2016,G,Usain BOLT,JAM,19.78
 M,200M Men,Rio,2016,S,Andre DE GRASSE,CAN,20.02
 M,200M Men,Rio,2016,B,Christophe LEMAITRE,FRA,20.12
-M,200M Men,Beijing,2008,G,Usain BOLT,JAM,19.30,-0.9
-M,200M Men,Beijing,2008,S,Shawn CRAWFORD,USA,19.96,-0.9
-M,200M Men,Beijing,2008,B,Walter DIX,USA,19.98,-0.9
+M,200M Men,Beijing,2008,G,Usain BOLT,JAM,18.70
+M,200M Men,Beijing,2008,S,Shawn CRAWFORD,USA,19.06
+M,200M Men,Beijing,2008,B,Walter DIX,USA,19.08
 M,200M Men,Sydney,2000,G,Kostas KENTERIS,GRE,20.09
 M,200M Men,Sydney,2000,S,Darren CAMPBELL,GBR,20.14
 M,200M Men,Sydney,2000,B,Ato BOLDON,TTO,20.2
@@ -388,21 +388,21 @@ M,200M Men,Stockholm,1912,B,William APPLEGARTH,GBR,22.0
 M,200M Men,St Louis,1904,G,Archie HAHN,USA,21.6
 M,200M Men,St Louis,1904,S,Nate CARTMELL,USA,21.9
 M,200M Men,St Louis,1904,B,William HOGENSON,USA,None
-M,20Km Race Walk Men,Rio,2016,G,Zhen WANG,CHN,1:19:14
-M,20Km Race Walk Men,Rio,2016,S,Zelin CAI,CHN,1:19:26
-M,20Km Race Walk Men,Rio,2016,B,Dane BIRD-SMITH,AUS,1:19:37
-M,20Km Race Walk Men,Beijing,2008,G,Valeriy BORCHIN,RUS,1h19:01
-M,20Km Race Walk Men,Beijing,2008,S,Jefferson PEREZ,ECU,1h19:15
-M,20Km Race Walk Men,Beijing,2008,B,Jared TALLENT,AUS,1h19:42
-M,20Km Race Walk Men,Sydney,2000,G,Robert KORZENIOWSKI,POL,01h18:59
-M,20Km Race Walk Men,Sydney,2000,S,Noe HERNANDEZ,MEX,01h19:03
-M,20Km Race Walk Men,Sydney,2000,B,Vladimir ANDREYEV,RUS,01h19:27
-M,20Km Race Walk Men,Barcelona,1992,G,Daniel PLAZA,ESP,1:21:45
-M,20Km Race Walk Men,Barcelona,1992,S,Guillaume LEBLANC,CAN,1:22:25
-M,20Km Race Walk Men,Barcelona,1992,B,Giovanni DE BENEDICTIS,ITA,1:23:11
-M,20Km Race Walk Men,Los Angeles,1984,G,Ernesto CANTO,MEX,1:23:13
-M,20Km Race Walk Men,Los Angeles,1984,S,RaÃºl GONZÃLEZ,MEX,1:23:20
-M,20Km Race Walk Men,Los Angeles,1984,B,Maurizio DAMILANO,ITA,1:23:26
+M,20Km Race Walk Men,Rio,2016,G,Zhen WANG,CHN,01:19:14
+M,20Km Race Walk Men,Rio,2016,S,Zelin CAI,CHN,01:19:26
+M,20Km Race Walk Men,Rio,2016,B,Dane BIRD-SMITH,AUS,01:19:37
+M,20Km Race Walk Men,Beijing,2008,G,Valeriy BORCHIN,RUS,01:19:01
+M,20Km Race Walk Men,Beijing,2008,S,Jefferson PEREZ,ECU,01:19:15
+M,20Km Race Walk Men,Beijing,2008,B,Jared TALLENT,AUS,01:19:42
+M,20Km Race Walk Men,Sydney,2000,G,Robert KORZENIOWSKI,POL,01:18:59
+M,20Km Race Walk Men,Sydney,2000,S,Noe HERNANDEZ,MEX,01:19:03
+M,20Km Race Walk Men,Sydney,2000,B,Vladimir ANDREYEV,RUS,01:19:27
+M,20Km Race Walk Men,Barcelona,1992,G,Daniel PLAZA,ESP,01:21:45
+M,20Km Race Walk Men,Barcelona,1992,S,Guillaume LEBLANC,CAN,01:22:25
+M,20Km Race Walk Men,Barcelona,1992,B,Giovanni DE BENEDICTIS,ITA,01:23:11
+M,20Km Race Walk Men,Los Angeles,1984,G,Ernesto CANTO,MEX,01:23:13
+M,20Km Race Walk Men,Los Angeles,1984,S,RaÃºl GONZÃLEZ,MEX,01:23:20
+M,20Km Race Walk Men,Los Angeles,1984,B,Maurizio DAMILANO,ITA,01:23:26
 M,20Km Race Walk Men,Montreal,1976,G,Daniel BAUTISTA ROCHA,MEX,1:24:40.6
 M,20Km Race Walk Men,Montreal,1976,S,Hans REIMANN,GDR,1:25:13.8
 M,20Km Race Walk Men,Montreal,1976,B,Peter FRENKEL,GDR,1:25:29.4
@@ -412,18 +412,18 @@ M,20Km Race Walk Men,Mexico,1968,B,Nikolay SMAGA,URS,1:34:03.4
 M,20Km Race Walk Men,Rome,1960,G,Vladimir GOLUBNICHY,URS,1:34:07.2
 M,20Km Race Walk Men,Rome,1960,S,Noel FREEMAN,AUS,1:34:16.4
 M,20Km Race Walk Men,Rome,1960,B,Stanley Frank VICKERS,GBR,1:34:56.4
-M,20Km Race Walk Men,London,2012,G,Ding CHEN,CHN,1:18:46
-M,20Km Race Walk Men,London,2012,S,Erick BARRONDO,GUA,1:18:57
-M,20Km Race Walk Men,London,2012,B,Zhen WANG,CHN,1:19:25
-M,20Km Race Walk Men,Athens,2004,G,Ivano BRUGNETTI,ITA,1h19:40
-M,20Km Race Walk Men,Athens,2004,S,Francisco Javier FERNANDEZ,ESP,1h19:45
-M,20Km Race Walk Men,Athens,2004,B,Nathan DEAKES,AUS,1h20:02
-M,20Km Race Walk Men,Atlanta,1996,G,Jefferson PEREZ,ECU,1:20:07
-M,20Km Race Walk Men,Atlanta,1996,S,Ilya MARKOV,RUS,1:20:16
-M,20Km Race Walk Men,Atlanta,1996,B,Bernardo SEGURA,MEX,1:20:23
-M,20Km Race Walk Men,Seoul,1988,G,Jozef PRIBILINEC,TCH,1:19:57
-M,20Km Race Walk Men,Seoul,1988,S,Ronald WEIGEL,GDR,1:20:00
-M,20Km Race Walk Men,Seoul,1988,B,Maurizio DAMILANO,ITA,1:20:14
+M,20Km Race Walk Men,London,2012,G,Ding CHEN,CHN,01:18:46
+M,20Km Race Walk Men,London,2012,S,Erick BARRONDO,GUA,01:18:57
+M,20Km Race Walk Men,London,2012,B,Zhen WANG,CHN,01:19:25
+M,20Km Race Walk Men,Athens,2004,G,Ivano BRUGNETTI,ITA,01:19:40
+M,20Km Race Walk Men,Athens,2004,S,Francisco Javier FERNANDEZ,ESP,01:19:45
+M,20Km Race Walk Men,Athens,2004,B,Nathan DEAKES,AUS,01:20:02
+M,20Km Race Walk Men,Atlanta,1996,G,Jefferson PEREZ,ECU,01:20:07
+M,20Km Race Walk Men,Atlanta,1996,S,Ilya MARKOV,RUS,01:20:16
+M,20Km Race Walk Men,Atlanta,1996,B,Bernardo SEGURA,MEX,01:20:23
+M,20Km Race Walk Men,Seoul,1988,G,Jozef PRIBILINEC,TCH,01:19:57
+M,20Km Race Walk Men,Seoul,1988,S,Ronald WEIGEL,GDR,01:20:00
+M,20Km Race Walk Men,Seoul,1988,B,Maurizio DAMILANO,ITA,01:20:14
 M,20Km Race Walk Men,Moscow,1980,G,Maurizio DAMILANO,ITA,1:23:35.5
 M,20Km Race Walk Men,Moscow,1980,S,Piotr POCHINCHUK,URS,1:24:45.4
 M,20Km Race Walk Men,Moscow,1980,B,Roland WIESER,GDR,1:25:58.2
@@ -763,8 +763,8 @@ M,4X400M Relay Men,Amsterdam,1928,G,null,USA,3:14.2
 M,4X400M Relay Men,Amsterdam,1928,S,null,GER,None
 M,4X400M Relay Men,Amsterdam,1928,B,null,CAN,None
 M,4X400M Relay Men,Antwerp,1920,G,null,GBR,3:22.2
-M,4X400M Relay Men,Antwerp,1920,S,null,RSA,3:23.0 est
-M,4X400M Relay Men,Antwerp,1920,B,null,FRA,3:23.5 est
+M,4X400M Relay Men,Antwerp,1920,S,null,RSA,3:23.0
+M,4X400M Relay Men,Antwerp,1920,B,null,FRA,3:23.5
 M,4X400M Relay Men,London,1908,G,null,USA,3:29.4
 M,4X400M Relay Men,London,1908,S,null,GER,None
 M,4X400M Relay Men,London,1908,B,null,HUN,None
@@ -870,21 +870,21 @@ M,5000M Men,Paris,1924,B,Edvin WIDE,SWE,15:01.8
 M,5000M Men,Stockholm,1912,G,Hannes KOLEHMAINEN,FIN,14:36.6
 M,5000M Men,Stockholm,1912,S,Jean BOUIN,FRA,14:36.7
 M,5000M Men,Stockholm,1912,B,George HUTSON,GBR,15:07.6
-M,50Km Race Walk Men,Rio,2016,G,Matej TOTH,SVK,3:40:58
-M,50Km Race Walk Men,Rio,2016,S,Jared TALLENT,AUS,3:41:16
-M,50Km Race Walk Men,Rio,2016,B,Hirooki ARAI,JPN,3:41:24
-M,50Km Race Walk Men,Beijing,2008,G,Alex SCHWAZER,ITA,3h37:09
-M,50Km Race Walk Men,Beijing,2008,S,Jared TALLENT,AUS,3h39:27
-M,50Km Race Walk Men,Beijing,2008,B,Denis NIZHEGORODOV,RUS,3h40:14
-M,50Km Race Walk Men,Sydney,2000,G,Robert KORZENIOWSKI,POL,03h42:22
-M,50Km Race Walk Men,Sydney,2000,S,Aigars FADEJEVS,LAT,03h43:40
-M,50Km Race Walk Men,Sydney,2000,B,Joel SANCHEZ GUERRERO,MEX,03h44:36
-M,50Km Race Walk Men,Barcelona,1992,G,Andrey PERLOV,EUN,3:50:13
-M,50Km Race Walk Men,Barcelona,1992,S,Carlos MERCENARIO,MEX,3:52:09
-M,50Km Race Walk Men,Barcelona,1992,B,Ronald WEIGEL,GER,3:53:45
-M,50Km Race Walk Men,Los Angeles,1984,G,RaÃºl GONZÃLEZ,MEX,3:47:26
-M,50Km Race Walk Men,Los Angeles,1984,S,Bo GUSTAFSSON,SWE,3:53:19
-M,50Km Race Walk Men,Los Angeles,1984,B,Sandro BELLUCCI,ITA,3:53:45
+M,50Km Race Walk Men,Rio,2016,G,Matej TOTH,SVK,03:40:58
+M,50Km Race Walk Men,Rio,2016,S,Jared TALLENT,AUS,03:41:16
+M,50Km Race Walk Men,Rio,2016,B,Hirooki ARAI,JPN,03:41:24
+M,50Km Race Walk Men,Beijing,2008,G,Alex SCHWAZER,ITA,03:37:09
+M,50Km Race Walk Men,Beijing,2008,S,Jared TALLENT,AUS,03:39:27
+M,50Km Race Walk Men,Beijing,2008,B,Denis NIZHEGORODOV,RUS,03:40:14
+M,50Km Race Walk Men,Sydney,2000,G,Robert KORZENIOWSKI,POL,03:42:22
+M,50Km Race Walk Men,Sydney,2000,S,Aigars FADEJEVS,LAT,03:43:40
+M,50Km Race Walk Men,Sydney,2000,B,Joel SANCHEZ GUERRERO,MEX,03:44:36
+M,50Km Race Walk Men,Barcelona,1992,G,Andrey PERLOV,EUN,03:50:13
+M,50Km Race Walk Men,Barcelona,1992,S,Carlos MERCENARIO,MEX,03:52:09
+M,50Km Race Walk Men,Barcelona,1992,B,Ronald WEIGEL,GER,03:53:45
+M,50Km Race Walk Men,Los Angeles,1984,G,RaÃºl GONZÃLEZ,MEX,03:47:26
+M,50Km Race Walk Men,Los Angeles,1984,S,Bo GUSTAFSSON,SWE,03:53:19
+M,50Km Race Walk Men,Los Angeles,1984,B,Sandro BELLUCCI,ITA,03:53:45
 M,50Km Race Walk Men,Munich,1972,G,Bernd KANNENBERG,FRG,3:56:11.6
 M,50Km Race Walk Men,Munich,1972,S,Veniamin SOLDATENKO,URS,3:58:24.0
 M,50Km Race Walk Men,Munich,1972,B,Larry YOUNG,USA,4:00:46.0
@@ -894,24 +894,24 @@ M,50Km Race Walk Men,Tokyo,1964,B,Ingvar PETTERSSON,SWE,4:14:17.4
 M,50Km Race Walk Men,Melbourne / Stockholm,1956,G,Norman READ,NZL,4:30:42.8
 M,50Km Race Walk Men,Melbourne / Stockholm,1956,S,Yevgeni MASKINSKOV,URS,4:32:57.0
 M,50Km Race Walk Men,Melbourne / Stockholm,1956,B,John LJUNGGREN,SWE,4:35:02.0
-M,50Km Race Walk Men,London,1948,G,John LJUNGGREN,SWE,4:41:52
-M,50Km Race Walk Men,London,1948,S,Gaston GODEL,SUI,4:48:17
-M,50Km Race Walk Men,London,1948,B,Terence Lloyd JOHNSON,GBR,4:48:31
-M,50Km Race Walk Men,Los Angeles,1932,G,Thomas William GREEN,GBR,4:50:10
-M,50Km Race Walk Men,Los Angeles,1932,S,Janis DALINS,LAT,4:57:20
-M,50Km Race Walk Men,Los Angeles,1932,B,Ugo FRIGERIO,ITA,4:59:06
-M,50Km Race Walk Men,London,2012,G,Jared TALLENT,AUS,3:36:53
-M,50Km Race Walk Men,London,2012,S,Tianfeng SI,CHN,3:37:16
-M,50Km Race Walk Men,London,2012,B,Robert HEFFERNAN,IRL,3:37:54
-M,50Km Race Walk Men,Athens,2004,G,Robert KORZENIOWSKI,POL,3h38:46
-M,50Km Race Walk Men,Athens,2004,S,Denis NIZHEGORODOV,RUS,3h42:50
-M,50Km Race Walk Men,Athens,2004,B,Aleksey VOYEVODIN,RUS,3h43:34
-M,50Km Race Walk Men,Atlanta,1996,G,Robert KORZENIOWSKI,POL,3:43:30
-M,50Km Race Walk Men,Atlanta,1996,S,Mikhail SHCHENNIKOV,RUS,3:43:46
-M,50Km Race Walk Men,Atlanta,1996,B,Valentin MASSANA,ESP,3:44:19
-M,50Km Race Walk Men,Seoul,1988,G,Vyacheslav IVANENKO,URS,3:38:29
-M,50Km Race Walk Men,Seoul,1988,S,Ronald WEIGEL,GDR,3:38:56
-M,50Km Race Walk Men,Seoul,1988,B,Hartwig GAUDER,GDR,3:39:45
+M,50Km Race Walk Men,London,1948,G,John LJUNGGREN,SWE,04:41:52
+M,50Km Race Walk Men,London,1948,S,Gaston GODEL,SUI,04:48:17
+M,50Km Race Walk Men,London,1948,B,Terence Lloyd JOHNSON,GBR,04:48:31
+M,50Km Race Walk Men,Los Angeles,1932,G,Thomas William GREEN,GBR,04:50:10
+M,50Km Race Walk Men,Los Angeles,1932,S,Janis DALINS,LAT,04:57:20
+M,50Km Race Walk Men,Los Angeles,1932,B,Ugo FRIGERIO,ITA,04:59:06
+M,50Km Race Walk Men,London,2012,G,Jared TALLENT,AUS,03:36:53
+M,50Km Race Walk Men,London,2012,S,Tianfeng SI,CHN,03:37:16
+M,50Km Race Walk Men,London,2012,B,Robert HEFFERNAN,IRL,03:37:54
+M,50Km Race Walk Men,Athens,2004,G,Robert KORZENIOWSKI,POL,03:38:46
+M,50Km Race Walk Men,Athens,2004,S,Denis NIZHEGORODOV,RUS,03:42:50
+M,50Km Race Walk Men,Athens,2004,B,Aleksey VOYEVODIN,RUS,03:43:34
+M,50Km Race Walk Men,Atlanta,1996,G,Robert KORZENIOWSKI,POL,03:43:30
+M,50Km Race Walk Men,Atlanta,1996,S,Mikhail SHCHENNIKOV,RUS,03:43:46
+M,50Km Race Walk Men,Atlanta,1996,B,Valentin MASSANA,ESP,03:44:19
+M,50Km Race Walk Men,Seoul,1988,G,Vyacheslav IVANENKO,URS,03:38:29
+M,50Km Race Walk Men,Seoul,1988,S,Ronald WEIGEL,GDR,03:38:56
+M,50Km Race Walk Men,Seoul,1988,B,Hartwig GAUDER,GDR,03:39:45
 M,50Km Race Walk Men,Moscow,1980,G,Hartwig GAUDER,GDR,3:49:24.0
 M,50Km Race Walk Men,Moscow,1980,S,Jorge LLOPART,ESP,3:51:25.0
 M,50Km Race Walk Men,Moscow,1980,B,Yevgeny Mikhaylovich IVCHENKO,URS,3:56:32.0
@@ -1038,15 +1038,15 @@ M,Decathlon Men,Helsinki,1952,B,Floyd SIMMONS,USA,6788.0
 M,Decathlon Men,Berlin,1936,G,Glenn MORRIS,USA,7900.0
 M,Decathlon Men,Berlin,1936,S,Robert Hyatt CLARK,USA,7601.0
 M,Decathlon Men,Berlin,1936,B,Jack PARKER,USA,7275.0
-M,Decathlon Men,Amsterdam,1928,G,Paavo YRJÃLÃ,FIN,8053.29  P.
-M,Decathlon Men,Amsterdam,1928,S,Aki JÃRVINEN,FIN,7931.50  P.
-M,Decathlon Men,Amsterdam,1928,B,John Kenneth DOHERTY,USA,7706.65  P.
-M,Decathlon Men,Antwerp,1920,G,Helge LÃVLAND,NOR,6803.355
-M,Decathlon Men,Antwerp,1920,S,Brutus HAMILTON,USA,6771.085
+M,Decathlon Men,Amsterdam,1928,G,Paavo YRJÃLÃ,FIN,8053.29
+M,Decathlon Men,Amsterdam,1928,S,Aki JÃRVINEN,FIN,7931.50
+M,Decathlon Men,Amsterdam,1928,B,John Kenneth DOHERTY,USA,7706.65
+M,Decathlon Men,Antwerp,1920,G,Helge LÃVLAND,NOR,6.803.355
+M,Decathlon Men,Antwerp,1920,S,Brutus HAMILTON,USA,6.771.085
 M,Decathlon Men,Antwerp,1920,B,Bertil OHLSON,SWE,6580.03
-M,Decathlon Men,St Louis,1904,G,Thomas Francis KIELY,GBR,6036 P.
-M,Decathlon Men,St Louis,1904,S,Adam GUNN,USA,5907 P.
-M,Decathlon Men,St Louis,1904,B,Truxtun HARE,USA,5813 P.
+M,Decathlon Men,St Louis,1904,G,Thomas Francis KIELY,GBR,6036
+M,Decathlon Men,St Louis,1904,S,Adam GUNN,USA,5907
+M,Decathlon Men,St Louis,1904,B,Truxtun HARE,USA,5813
 M,Decathlon Men,London,2012,G,Ashton EATON,USA,8869.0
 M,Decathlon Men,London,2012,S,Trey HARDEE,USA,8671.0
 M,Decathlon Men,London,2012,B,Leonel SUAREZ,CUB,8523.0
@@ -1074,16 +1074,16 @@ M,Decathlon Men,Melbourne / Stockholm,1956,B,Vasily KUZNETSOV,URS,7465.0
 M,Decathlon Men,London,1948,G,Bob MATHIAS,USA,7139.0
 M,Decathlon Men,London,1948,S,Ignace HEINRICH,FRA,6974.0
 M,Decathlon Men,London,1948,B,Floyd SIMMONS,USA,6950.0
-M,Decathlon Men,Los Angeles,1932,G,Jim BAUSCH,USA,8462.235
+M,Decathlon Men,Los Angeles,1932,G,Jim BAUSCH,USA,8.462.235
 M,Decathlon Men,Los Angeles,1932,S,Aki JÃRVINEN,FIN,8292.48
-M,Decathlon Men,Los Angeles,1932,B,Wolrad EBERLE,GER,8030.805
-M,Decathlon Men,Paris,1924,G,Harold OSBORN,USA,7740.775 P.
-M,Decathlon Men,Paris,1924,S,Emerson NORTON,USA,7350.895 P.
-M,Decathlon Men,Paris,1924,B,Alexander KLUMBERG-KOLMPERE,EST,7329.33 P.
-M,Decathlon Men,Stockholm,1912,G,Hugo WIESLANDER,SWE,7724.495 P.
-M,Decathlon Men,Stockholm,1912,G,Jim THORPE,USA,8412.955
-M,Decathlon Men,Stockholm,1912,S,Charles LOMBERG,SWE,7413.510 P.
-M,Decathlon Men,Stockholm,1912,B,GÃ¶sta HOLMER,SWE,7347.855 P.
+M,Decathlon Men,Los Angeles,1932,B,Wolrad EBERLE,GER,8.030.805
+M,Decathlon Men,Paris,1924,G,Harold OSBORN,USA,7.740.775
+M,Decathlon Men,Paris,1924,S,Emerson NORTON,USA,7.350.895
+M,Decathlon Men,Paris,1924,B,Alexander KLUMBERG-KOLMPERE,EST,7329.33
+M,Decathlon Men,Stockholm,1912,G,Hugo WIESLANDER,SWE,7.724.495
+M,Decathlon Men,Stockholm,1912,G,Jim THORPE,USA,8.412.955
+M,Decathlon Men,Stockholm,1912,S,Charles LOMBERG,SWE,7.413.510
+M,Decathlon Men,Stockholm,1912,B,GÃ¶sta HOLMER,SWE,7.347.855
 M,Discus Throw Men,Rio,2016,G,Christoph HARTING,GER,68.37
 M,Discus Throw Men,Rio,2016,S,Piotr MALACHOWSKI,POL,67.55
 M,Discus Throw Men,Rio,2016,B,Daniel JASINSKI,GER,67.05
@@ -1218,8 +1218,8 @@ M,High Jump Men,Montreal,1976,B,Dwight STONES,USA,2.21
 M,High Jump Men,Rome,1960,G,Robert SHAVLAKADZE,URS,2.16
 M,High Jump Men,Rome,1960,S,Valeri BRUMEL,URS,2.16
 M,High Jump Men,Rome,1960,B,John THOMAS,USA,2.14
-M,High Jump Men,Helsinki,1952,G,Walt DAVIS,USA,2.04
-M,High Jump Men,Helsinki,1952,S,Kenneth WIESNER,USA,2.01
+M,High Jump Men,Helsinki,1952,G,Walt DAVIS,USA,02.04
+M,High Jump Men,Helsinki,1952,S,Kenneth WIESNER,USA,02.01
 M,High Jump Men,Helsinki,1952,B,Jose TELLES DA CONCEICAO,BRA,1.98
 M,High Jump Men,London,1908,G,Harry PORTER,USA,1.9
 M,High Jump Men,London,1908,S,IstvÃ¡n SOMODI,HUN,1.88
@@ -1324,22 +1324,22 @@ M,Long Jump Men,Barcelona,1992,S,Mike POWELL,USA,8.64
 M,Long Jump Men,Barcelona,1992,B,Joe GREENE,USA,8.34
 M,Long Jump Men,Montreal,1976,G,Arnie ROBINSON,USA,8.35
 M,Long Jump Men,Montreal,1976,S,Randel Luvelle WILLIAMS,USA,8.11
-M,Long Jump Men,Montreal,1976,B,Frank WARTENBERG,GDR,8.02
+M,Long Jump Men,Montreal,1976,B,Frank WARTENBERG,GDR,08.02
 M,Long Jump Men,Rome,1960,G,Ralph BOSTON,USA,8.12
 M,Long Jump Men,Rome,1960,S,Irvin ROBERSON,USA,8.11
-M,Long Jump Men,Rome,1960,B,Igor TER-OVANESYAN,URS,8.04
+M,Long Jump Men,Rome,1960,B,Igor TER-OVANESYAN,URS,08.04
 M,Long Jump Men,Helsinki,1952,G,Jerome BIFFLE,USA,7.57
 M,Long Jump Men,Helsinki,1952,S,Meredith GOURDINE,USA,7.53
 M,Long Jump Men,Helsinki,1952,B,ÃâdÃÂ¶n FÃâLDESSY,HUN,7.3
-M,Long Jump Men,Berlin,1936,G,Jesse OWENS,USA,8.06
+M,Long Jump Men,Berlin,1936,G,Jesse OWENS,USA,08.06
 M,Long Jump Men,Berlin,1936,S,Luz LONG,GER,7.87
 M,Long Jump Men,Berlin,1936,B,Naoto TAJIMA,JPN,7.74
 M,Long Jump Men,Amsterdam,1928,G,Edward Barton HAMM,USA,7.73
 M,Long Jump Men,Amsterdam,1928,S,Sylvio CATOR,HAI,7.58
 M,Long Jump Men,Amsterdam,1928,B,Al BATES,USA,7.4
 M,Long Jump Men,London,1908,G,Frank IRONS,USA,7.48
-M,Long Jump Men,London,1908,S,Daniel KELLY,USA,7.09
-M,Long Jump Men,London,1908,B,Calvin BRICKER,CAN,7.08
+M,Long Jump Men,London,1908,S,Daniel KELLY,USA,07.09
+M,Long Jump Men,London,1908,B,Calvin BRICKER,CAN,07.08
 M,Long Jump Men,Paris,1900,G,Alvin KRAENZLEIN,USA,7.185
 M,Long Jump Men,Paris,1900,S,Meyer PRINSTEIN,USA,7.175
 M,Long Jump Men,Paris,1900,B,Patrick LEAHY,GBR,6.95
@@ -1355,8 +1355,8 @@ M,Long Jump Men,Atlanta,1996,B,Joe GREENE,USA,8.24
 M,Long Jump Men,Moscow,1980,G,Lutz DOMBROWSKI,GDR,8.54
 M,Long Jump Men,Moscow,1980,S,Frank PASCHEK,GDR,8.21
 M,Long Jump Men,Moscow,1980,B,Valeri PODLUZHNYI,URS,8.18
-M,Long Jump Men,Tokyo,1964,G,Lynn DAVIES,GBR,8.07
-M,Long Jump Men,Tokyo,1964,S,Ralph BOSTON,USA,8.03
+M,Long Jump Men,Tokyo,1964,G,Lynn DAVIES,GBR,08.07
+M,Long Jump Men,Tokyo,1964,S,Ralph BOSTON,USA,08.03
 M,Long Jump Men,Tokyo,1964,B,Igor TER-OVANESYAN,URS,7.99
 M,Long Jump Men,Los Angeles,1932,G,Edward Lansing GORDON,USA,7.64
 M,Long Jump Men,Los Angeles,1932,S,Lambert REDD,USA,7.6
@@ -1374,20 +1374,20 @@ M,Long Jump Men,Athens,1896,G,Ellery CLARK,USA,6.35
 M,Long Jump Men,Athens,1896,S,Robert GARRETT,USA,6.18
 M,Long Jump Men,Athens,1896,B,James CONNOLLY,USA,6.11
 M,Marathon Men,Rio,2016,G,Eliud Kipchoge ROTICH,KEN,02:08:44
-M,Marathon Men,Rio,2016,S,Feyisa LILESA,ETH,2:09:54
-M,Marathon Men,Rio,2016,B,Galen RUPP,USA,2:10:05
-M,Marathon Men,Beijing,2008,G,Samuel Kamau WANJIRU,KEN,2h06:32
-M,Marathon Men,Beijing,2008,S,Jaouad GHARIB,MAR,2h07:16
-M,Marathon Men,Beijing,2008,B,Tsegay KEBEDE,ETH,2h10:00
-M,Marathon Men,Sydney,2000,G,Gezahegne ABERA,ETH,02h10:11
-M,Marathon Men,Sydney,2000,S,Erick WAINAINA,KEN,02h10:31
-M,Marathon Men,Sydney,2000,B,Tesfaye TOLA,ETH,02h11:10
-M,Marathon Men,Barcelona,1992,G,Young-Cho HWANG,KOR,2:13:23
-M,Marathon Men,Barcelona,1992,S,Koichi MORISHITA,JPN,2:13:45
-M,Marathon Men,Barcelona,1992,B,Stephan FREIGANG,GER,2:14:00
-M,Marathon Men,Los Angeles,1984,G,Carlos LOPES,POR,2:09:21
-M,Marathon Men,Los Angeles,1984,S,John TREACY,IRL,2:09:56
-M,Marathon Men,Los Angeles,1984,B,Charles SPEDDING,GBR,2:09:58
+M,Marathon Men,Rio,2016,S,Feyisa LILESA,ETH,02:09:54
+M,Marathon Men,Rio,2016,B,Galen RUPP,USA,02:10:05
+M,Marathon Men,Beijing,2008,G,Samuel Kamau WANJIRU,KEN,02:06:32
+M,Marathon Men,Beijing,2008,S,Jaouad GHARIB,MAR,02:07:16
+M,Marathon Men,Beijing,2008,B,Tsegay KEBEDE,ETH,02:10:00
+M,Marathon Men,Sydney,2000,G,Gezahegne ABERA,ETH,02:10:11
+M,Marathon Men,Sydney,2000,S,Erick WAINAINA,KEN,02:10:31
+M,Marathon Men,Sydney,2000,B,Tesfaye TOLA,ETH,02:11:10
+M,Marathon Men,Barcelona,1992,G,Young-Cho HWANG,KOR,02:13:23
+M,Marathon Men,Barcelona,1992,S,Koichi MORISHITA,JPN,02:13:45
+M,Marathon Men,Barcelona,1992,B,Stephan FREIGANG,GER,02:14:00
+M,Marathon Men,Los Angeles,1984,G,Carlos LOPES,POR,02:09:21
+M,Marathon Men,Los Angeles,1984,S,John TREACY,IRL,02:09:56
+M,Marathon Men,Los Angeles,1984,B,Charles SPEDDING,GBR,02:09:58
 M,Marathon Men,Montreal,1976,G,Waldemar CIERPINSKI,GDR,2:09:55.0
 M,Marathon Men,Montreal,1976,S,Frank Charles SHORTER,USA,2:10:45.8
 M,Marathon Men,Montreal,1976,B,Karel LISMONT,BEL,2:11:12.6
@@ -1415,18 +1415,18 @@ M,Marathon Men,London,1908,B,Joseph FORSHAW,USA,2:57:10.4
 M,Marathon Men,Paris,1900,G,Michel THÃATO,FRA,2-59:45.0
 M,Marathon Men,Paris,1900,S,Ãmile CHAMPION,FRA,3-04:17.0
 M,Marathon Men,Paris,1900,B,Ernst FAST,SWE,3-37:14.0
-M,Marathon Men,London,2012,G,Stephen KIPROTICH,UGA,2:08:01
-M,Marathon Men,London,2012,S,Abel KIRUI,KEN,2:08:27
-M,Marathon Men,London,2012,B,Wilson Kipsang KIPROTICH,KEN,2:09:37
-M,Marathon Men,Athens,2004,G,Stefano BALDINI,ITA,2h10:55
-M,Marathon Men,Athens,2004,S,Mebrahtom KEFLEZIGHI,USA,2h11:29
-M,Marathon Men,Athens,2004,B,Vanderlei DE LIMA,BRA,2h12:11
-M,Marathon Men,Atlanta,1996,G,Josia THUGWANE,RSA,2:12:36
-M,Marathon Men,Atlanta,1996,S,Bong Ju LEE,KOR,2:12:39
-M,Marathon Men,Atlanta,1996,B,Erick WAINAINA,KEN,2:12:44
-M,Marathon Men,Seoul,1988,G,Gelindo BORDIN,ITA,2:10:32
-M,Marathon Men,Seoul,1988,S,Douglas WAKIIHURI,KEN,2:10:47
-M,Marathon Men,Seoul,1988,B,Hussein AHMED SALAH,DJI,2:10:59
+M,Marathon Men,London,2012,G,Stephen KIPROTICH,UGA,02:08:01
+M,Marathon Men,London,2012,S,Abel KIRUI,KEN,02:08:27
+M,Marathon Men,London,2012,B,Wilson Kipsang KIPROTICH,KEN,02:09:37
+M,Marathon Men,Athens,2004,G,Stefano BALDINI,ITA,02:10:55
+M,Marathon Men,Athens,2004,S,Mebrahtom KEFLEZIGHI,USA,02:11:29
+M,Marathon Men,Athens,2004,B,Vanderlei DE LIMA,BRA,02:12:11
+M,Marathon Men,Atlanta,1996,G,Josia THUGWANE,RSA,02:12:36
+M,Marathon Men,Atlanta,1996,S,Bong Ju LEE,KOR,02:12:39
+M,Marathon Men,Atlanta,1996,B,Erick WAINAINA,KEN,02:12:44
+M,Marathon Men,Seoul,1988,G,Gelindo BORDIN,ITA,02:10:32
+M,Marathon Men,Seoul,1988,S,Douglas WAKIIHURI,KEN,02:10:47
+M,Marathon Men,Seoul,1988,B,Hussein AHMED SALAH,DJI,02:10:59
 M,Marathon Men,Moscow,1980,G,Waldemar CIERPINSKI,GDR,2:11:03.0
 M,Marathon Men,Moscow,1980,S,Gerard NIJBOER,NED,2:11:20.0
 M,Marathon Men,Moscow,1980,B,Setymkul DZHUMANAZAROV,URS,2:11:35.0
@@ -1436,15 +1436,15 @@ M,Marathon Men,Munich,1972,B,Mamo WOLDE,ETH,2:15:08.4
 M,Marathon Men,Tokyo,1964,G,Abebe BIKILA,ETH,2:12:11.2
 M,Marathon Men,Tokyo,1964,S,Basil HEATLEY,GBR,2:16:19.2
 M,Marathon Men,Tokyo,1964,B,Kokichi TSUBURAYA,JPN,2:16:22.8
-M,Marathon Men,Melbourne / Stockholm,1956,G,Alain MIMOUN,FRA,2:25:00
-M,Marathon Men,Melbourne / Stockholm,1956,S,Franjo MIHALIC,YUG,2:26:32
-M,Marathon Men,Melbourne / Stockholm,1956,B,Veikko KARVONEN,FIN,2:27:47
+M,Marathon Men,Melbourne / Stockholm,1956,G,Alain MIMOUN,FRA,02:25:00
+M,Marathon Men,Melbourne / Stockholm,1956,S,Franjo MIHALIC,YUG,02:26:32
+M,Marathon Men,Melbourne / Stockholm,1956,B,Veikko KARVONEN,FIN,02:27:47
 M,Marathon Men,London,1948,G,Delfo CABRERA,ARG,2:34:51.6
 M,Marathon Men,London,1948,S,Thomas John Henry RICHARDS,GBR,2:35:07.6
 M,Marathon Men,London,1948,B,Etienne GAILLY,BEL,2:35:33.6
-M,Marathon Men,Los Angeles,1932,G,Juan Carlos ZABALA,ARG,2:31:36
-M,Marathon Men,Los Angeles,1932,S,Samuel FERRIS,GBR,2:31:55
-M,Marathon Men,Los Angeles,1932,B,Armas TOIVONEN,FIN,2:32:12
+M,Marathon Men,Los Angeles,1932,G,Juan Carlos ZABALA,ARG,02:31:36
+M,Marathon Men,Los Angeles,1932,S,Samuel FERRIS,GBR,02:31:55
+M,Marathon Men,Los Angeles,1932,B,Armas TOIVONEN,FIN,02:32:12
 M,Marathon Men,Paris,1924,G,Albin STENROOS,FIN,2:41:22.6
 M,Marathon Men,Paris,1924,S,Romeo BERTINI,ITA,2:47:19.6
 M,Marathon Men,Paris,1924,B,Clarence DEMAR,USA,2:48:14.0
@@ -1457,7 +1457,7 @@ M,Marathon Men,St Louis,1904,B,Arthur NEWTON,USA,3:47:33.0
 M,Marathon Men,Athens,1896,G,Spyridon LOUIS,GRE,2-58:50
 M,Marathon Men,Athens,1896,S,Kharilaos VASILAKOS,GRE,3-06:03
 M,Marathon Men,Athens,1896,B,Gyula KELLNER,HUN,3-06:35
-M,Pole Vault Men,Rio,2016,G,Thiago Braz DA SILVA,BRA,6.03
+M,Pole Vault Men,Rio,2016,G,Thiago Braz DA SILVA,BRA,06.03
 M,Pole Vault Men,Rio,2016,S,Renaud LAVILLENIE,FRA,5.98
 M,Pole Vault Men,Rio,2016,B,Sam KENDRICKS,USA,5.85
 M,Pole Vault Men,Beijing,2008,G,Steve HOOKER,AUS,5.96
@@ -1495,7 +1495,7 @@ M,Pole Vault Men,Moscow,1980,G,Wladyslaw KOZAKIEWICZ,POL,5.78
 M,Pole Vault Men,Moscow,1980,S,Tadeusz SLUSARSKI,POL,5.65
 M,Pole Vault Men,Moscow,1980,S,Konstantin VOLKOV,URS,5.65
 M,Pole Vault Men,Tokyo,1964,G,Fred HANSEN,USA,5.1
-M,Pole Vault Men,Tokyo,1964,S,Wolfgang REINHARDT,EUA,5.05
+M,Pole Vault Men,Tokyo,1964,S,Wolfgang REINHARDT,EUA,05.05
 M,Pole Vault Men,Tokyo,1964,B,Klaus LEHNERTZ,EUA,5.0
 M,Pole Vault Men,Los Angeles,1932,G,William Waring MILLER,USA,4.315
 M,Pole Vault Men,Los Angeles,1932,S,Shuhei NISHIDA,JPN,4.3
@@ -1538,7 +1538,7 @@ M,Shot Put Men,Helsinki,1952,G,Parry O'BRIEN,USA,17.41
 M,Shot Put Men,Helsinki,1952,S,Darrow Clarence HOOPER,USA,17.39
 M,Shot Put Men,Helsinki,1952,B,James FUCHS,USA,17.06
 M,Shot Put Men,Berlin,1936,G,Hans WOELLKE,GER,16.2
-M,Shot Put Men,Berlin,1936,S,Sulo BARLUND,FIN,16.12
+M,Shot Put Men,Berlin,1936,S,Sulo BARLUND,FIN,16.12
 M,Shot Put Men,Berlin,1936,B,Gerhard STÃCK,GER,15.66
 M,Shot Put Men,London,1908,G,Ralph ROSE,USA,14.21
 M,Shot Put Men,London,1908,S,Denis HORGAN,GBR,13.62
@@ -1609,7 +1609,7 @@ M,Triple Jump Men,Athens,2004,B,Daniil Sergeyevich BURKENYA,RUS,17.48
 M,Triple Jump Men,Atlanta,1996,G,Kenny HARRISON,USA,18.09
 M,Triple Jump Men,Atlanta,1996,S,Jonathan EDWARDS,GBR,17.88
 M,Triple Jump Men,Atlanta,1996,B,Yoelvis QUESADA,CUB,17.44
-M,Triple Jump Men,Moscow,1980,G,Jaak UUDMÃE,URS,17.35
+M,Triple Jump Men,Moscow,1980,G,Jaak UUDMÃE,URS,17.35
 M,Triple Jump Men,Moscow,1980,S,Viktor SANEYEV,URS,17.24
 M,Triple Jump Men,Moscow,1980,B,JoÃ£o Carlos DE OLIVEIRA,BRA,17.22
 M,Triple Jump Men,Tokyo,1964,G,Jozef SCHMIDT,POL,16.85
@@ -1654,9 +1654,9 @@ W,10000M Women,Atlanta,1996,B,Gete WAMI,ETH,31:06.65
 W,100M Hurdles Women,Rio,2016,G,Brianna ROLLINS,USA,12.48
 W,100M Hurdles Women,Rio,2016,S,Nia ALI,USA,12.59
 W,100M Hurdles Women,Rio,2016,B,Kristi CASTLIN,USA,12.61
-W,100M Hurdles Women,Beijing,2008,G,Dawn HARPER,USA,12.54,+0.1
-W,100M Hurdles Women,Beijing,2008,S,Sally PEARSON,AUS,12.64,+0.1
-W,100M Hurdles Women,Beijing,2008,B,Priscilla LOPES-SCHLIEP,CAN,12.64,+0.1
+W,100M Hurdles Women,Beijing,2008,G,Dawn HARPER,USA,12.64
+W,100M Hurdles Women,Beijing,2008,S,Sally PEARSON,AUS,12.74
+W,100M Hurdles Women,Beijing,2008,B,Priscilla LOPES-SCHLIEP,CAN,12.74
 W,100M Hurdles Women,Sydney,2000,G,Olga SHISHIGINA,KAZ,12.65
 W,100M Hurdles Women,Sydney,2000,S,Gloria ALOZIE,NGR,12.68
 W,100M Hurdles Women,Sydney,2000,B,Melissa MORRISON,USA,12.76
@@ -1780,9 +1780,9 @@ W,1500M Women,Munich,1972,B,Paola PIGNI-CACCHI,ITA,4:02.85
 W,200M Women,Rio,2016,G,Elaine THOMPSON,JAM,21.78
 W,200M Women,Rio,2016,S,Dafne SCHIPPERS,NED,21.88
 W,200M Women,Rio,2016,B,Tori BOWIE,USA,22.15
-W,200M Women,Beijing,2008,G,Veronica CAMPBELL-BROWN,JAM,21.74,+0.6
-W,200M Women,Beijing,2008,S,Allyson FELIX,USA,21.93,+0.6
-W,200M Women,Beijing,2008,B,Kerron STEWART,JAM,22.00,+0.6
+W,200M Women,Beijing,2008,G,Veronica CAMPBELL-BROWN,JAM,22.34
+W,200M Women,Beijing,2008,S,Allyson FELIX,USA,22.53
+W,200M Women,Beijing,2008,B,Kerron STEWART,JAM,22.60
 W,200M Women,Sydney,2000,G,Pauline DAVIS,BAH,22.27
 W,200M Women,Sydney,2000,S,Susanthika JAYASINGHE,SRI,22.28
 W,200M Women,Sydney,2000,B,Beverly MCDONALD,JAM,22.35
@@ -1828,21 +1828,21 @@ W,200M Women,Melbourne / Stockholm,1956,B,Marlene MATHEWS-WILLARD,AUS,23.8
 W,200M Women,London,1948,G,Fanny BLANKERS-KOEN,NED,24.4
 W,200M Women,London,1948,S,Audrey WILLIAMSON,GBR,25.1
 W,200M Women,London,1948,B,Audrey PATTERSON,USA,25.2
-W,20Km Race Walk Women,Rio,2016,G,Hong LIU,CHN,1:28:35
-W,20Km Race Walk Women,Rio,2016,S,Maria Guadalupe GONZALEZ,MEX,1:28:37
-W,20Km Race Walk Women,Rio,2016,B,Xiuzhi LU,CHN,1:28:42
-W,20Km Race Walk Women,Beijing,2008,G,Olga KANISKINA,RUS,1h26:31
-W,20Km Race Walk Women,Beijing,2008,S,Kjersti PLAETZER,NOR,1h27:07
-W,20Km Race Walk Women,Beijing,2008,B,Elisa RIGAUDO,ITA,1h27:12
-W,20Km Race Walk Women,Sydney,2000,G,Liping WANG,CHN,01h29:05
-W,20Km Race Walk Women,Sydney,2000,G,Liping WANG,CHN,01h29:05
-W,20Km Race Walk Women,Sydney,2000,S,Kjersti PLAETZER,NOR,01h29:33
-W,20Km Race Walk Women,Sydney,2000,B,Maria VASCO,ESP,01h30:23
-W,20Km Race Walk Women,London,2012,G,Elena LASHMANOVA,RUS,1:25:02
-W,20Km Race Walk Women,London,2012,B,Shenjie QIEYANG,CHN,1:25:16
-W,20Km Race Walk Women,Athens,2004,G,Athanasia TSOUMELEKA,GRE,1h29:12
-W,20Km Race Walk Women,Athens,2004,S,Olimpiada IVANOVA,RUS,1h29:16
-W,20Km Race Walk Women,Athens,2004,B,Jane SAVILLE,AUS,1h29:25
+W,20Km Race Walk Women,Rio,2016,G,Hong LIU,CHN,01:28:35
+W,20Km Race Walk Women,Rio,2016,S,Maria Guadalupe GONZALEZ,MEX,01:28:37
+W,20Km Race Walk Women,Rio,2016,B,Xiuzhi LU,CHN,01:28:42
+W,20Km Race Walk Women,Beijing,2008,G,Olga KANISKINA,RUS,01:26:31
+W,20Km Race Walk Women,Beijing,2008,S,Kjersti PLAETZER,NOR,01:27:07
+W,20Km Race Walk Women,Beijing,2008,B,Elisa RIGAUDO,ITA,01:27:12
+W,20Km Race Walk Women,Sydney,2000,G,Liping WANG,CHN,01:29:05
+W,20Km Race Walk Women,Sydney,2000,G,Liping WANG,CHN,01:29:05
+W,20Km Race Walk Women,Sydney,2000,S,Kjersti PLAETZER,NOR,01:29:33
+W,20Km Race Walk Women,Sydney,2000,B,Maria VASCO,ESP,01:30:23
+W,20Km Race Walk Women,London,2012,G,Elena LASHMANOVA,RUS,01:25:02
+W,20Km Race Walk Women,London,2012,B,Shenjie QIEYANG,CHN,01:25:16
+W,20Km Race Walk Women,Athens,2004,G,Athanasia TSOUMELEKA,GRE,01:29:12
+W,20Km Race Walk Women,Athens,2004,S,Olimpiada IVANOVA,RUS,01:29:16
+W,20Km Race Walk Women,Athens,2004,B,Jane SAVILLE,AUS,01:29:25
 W,3000M Steeplechase Women,Rio,2016,G,Ruth JEBET,BRN,8:59.75
 W,3000M Steeplechase Women,Rio,2016,S,Hyvin Kiyeng JEPKEMOI,KEN,9:07.12
 W,3000M Steeplechase Women,Rio,2016,B,Emma COBURN,USA,9:07.63
@@ -2145,7 +2145,7 @@ W,Heptathlon Women,Beijing,2008,B,Tatyana CHERNOVA,RUS,6591.0
 W,Heptathlon Women,Sydney,2000,G,Denise LEWIS,GBR,6584.0
 W,Heptathlon Women,Sydney,2000,S,Yelena PROKHOROVA,RUS,6531.0
 W,Heptathlon Women,Sydney,2000,B,Natalya SAZANOVICH,BLR,6527.0
-W,Heptathlon Women,Barcelona,1992,G,Jackie JOYNER,USA,7044 P.
+W,Heptathlon Women,Barcelona,1992,G,Jackie JOYNER,USA,7044
 W,Heptathlon Women,Barcelona,1992,S,Irina BELOVA,EUN,6845.0
 W,Heptathlon Women,Barcelona,1992,B,Sabine BRAUN,GER,6649.0
 W,Heptathlon Women,Los Angeles,1984,G,Glynis NUNN,AUS,6390.0
@@ -2160,19 +2160,19 @@ W,Heptathlon Women,Athens,2004,B,Kelly SOTHERTON,GBR,6424.0
 W,Heptathlon Women,Atlanta,1996,G,Ghada SHOUAA,SYR,6780.0
 W,Heptathlon Women,Atlanta,1996,S,Natalya SAZANOVICH,BLR,6563.0
 W,Heptathlon Women,Atlanta,1996,B,Denise LEWIS,GBR,6489.0
-W,Heptathlon Women,Seoul,1988,G,Jackie JOYNER,USA,7291 P.
+W,Heptathlon Women,Seoul,1988,G,Jackie JOYNER,USA,7291
 W,Heptathlon Women,Seoul,1988,S,Sabine JOHN,GDR,6897.0
 W,Heptathlon Women,Seoul,1988,B,Anke BEHMER,GDR,6858.0
 W,High Jump Women,Rio,2016,G,Ruth BEITIA,ESP,None
 W,High Jump Women,Rio,2016,S,Mirela DEMIREVA,BUL,None
 W,High Jump Women,Rio,2016,B,Blanka VLASIC,CRO,None
-W,High Jump Women,Beijing,2008,G,Tia HELLEBAUT,BEL,2.05
-W,High Jump Women,Beijing,2008,S,Blanka VLASIC,CRO,2.05
-W,High Jump Women,Sydney,2000,G,Yelena YELESINA,RUS,2.01
-W,High Jump Women,Sydney,2000,S,Hestrie CLOETE,RSA,2.01
+W,High Jump Women,Beijing,2008,G,Tia HELLEBAUT,BEL,02.05
+W,High Jump Women,Beijing,2008,S,Blanka VLASIC,CRO,02.05
+W,High Jump Women,Sydney,2000,G,Yelena YELESINA,RUS,02.01
+W,High Jump Women,Sydney,2000,S,Hestrie CLOETE,RSA,02.01
 W,High Jump Women,Sydney,2000,B,Kajsa BERGQVIST,SWE,1.99
 W,High Jump Women,Sydney,2000,B,Oana PANTELIMON,ROU,1.99
-W,High Jump Women,Barcelona,1992,G,Heike HENKEL,GER,2.02
+W,High Jump Women,Barcelona,1992,G,Heike HENKEL,GER,02.02
 W,High Jump Women,Barcelona,1992,S,Galina ASTAFEI,ROU,2.0
 W,High Jump Women,Barcelona,1992,B,Joanet QUINTERO,CUB,1.97
 W,High Jump Women,Montreal,1976,G,Rosemarie WITSCHAS-ACKERMANN,GDR,1.93
@@ -2187,15 +2187,15 @@ W,High Jump Women,Helsinki,1952,B,Aleksandra CHUDINA,URS,1.63
 W,High Jump Women,Berlin,1936,G,Ibolya CSÃK,HUN,1.6
 W,High Jump Women,Berlin,1936,S,Dorothy ODAM,GBR,1.6
 W,High Jump Women,Berlin,1936,B,Elfriede KAUN,GER,1.6
-W,High Jump Women,London,2012,G,Anna CHICHEROVA,RUS,2.05
-W,High Jump Women,London,2012,S,Brigetta BARRETT,USA,2.03
-W,High Jump Women,London,2012,B,Svetlana SHKOLINA,RUS,2.03
-W,High Jump Women,Athens,2004,G,Elena SLESARENKO,RUS,2.06
-W,High Jump Women,Athens,2004,S,Hestrie CLOETE,RSA,2.02
-W,High Jump Women,Athens,2004,B,Vita STYOPINA,UKR,2.02
-W,High Jump Women,Atlanta,1996,G,Stefka KOSTADINOVA,BUL,2.05
-W,High Jump Women,Atlanta,1996,S,Niki BAKOGIANNI,GRE,2.03
-W,High Jump Women,Atlanta,1996,B,Inha BABAKOVA,UKR,2.01
+W,High Jump Women,London,2012,G,Anna CHICHEROVA,RUS,02.05
+W,High Jump Women,London,2012,S,Brigetta BARRETT,USA,02.03
+W,High Jump Women,London,2012,B,Svetlana SHKOLINA,RUS,02.03
+W,High Jump Women,Athens,2004,G,Elena SLESARENKO,RUS,02.06
+W,High Jump Women,Athens,2004,S,Hestrie CLOETE,RSA,02.02
+W,High Jump Women,Athens,2004,B,Vita STYOPINA,UKR,02.02
+W,High Jump Women,Atlanta,1996,G,Stefka KOSTADINOVA,BUL,02.05
+W,High Jump Women,Atlanta,1996,S,Niki BAKOGIANNI,GRE,02.03
+W,High Jump Women,Atlanta,1996,B,Inha BABAKOVA,UKR,02.01
 W,High Jump Women,Moscow,1980,G,Sara SIMEONI,ITA,1.97
 W,High Jump Women,Moscow,1980,S,Urszula KIELAN,POL,1.94
 W,High Jump Women,Moscow,1980,B,Jutta KIRST,GDR,1.94
@@ -2260,15 +2260,15 @@ W,Javelin Throw Women,Los Angeles,1932,S,Ellen BRAUMÃLLER,GER,43.49
 W,Javelin Throw Women,Los Angeles,1932,B,Tilly FLEISCHER,GER,43.0
 W,Long Jump Women,Rio,2016,G,Tianna BARTOLETTA,USA,7.17
 W,Long Jump Women,Rio,2016,S,Brittney REESE,USA,7.15
-W,Long Jump Women,Rio,2016,B,Ivana SPANOVIC,SRB,7.08
-W,Long Jump Women,Beijing,2008,G,Maurren Higa MAGGI,BRA,7.04
+W,Long Jump Women,Rio,2016,B,Ivana SPANOVIC,SRB,07.08
+W,Long Jump Women,Beijing,2008,G,Maurren Higa MAGGI,BRA,07.04
 W,Long Jump Women,Beijing,2008,B,Blessing OKAGBARE,NGR,6.91
 W,Long Jump Women,Sydney,2000,G,Heike DRECHSLER,GER,6.99
 W,Long Jump Women,Sydney,2000,S,Fiona MAY,ITA,6.92
 W,Long Jump Women,Sydney,2000,B,Tatyana KOTOVA,RUS,6.83
 W,Long Jump Women,Barcelona,1992,G,Heike DRECHSLER,GER,7.14
 W,Long Jump Women,Barcelona,1992,S,Inessa KRAVETS,EUN,7.12
-W,Long Jump Women,Barcelona,1992,B,Jackie JOYNER,USA,7.07
+W,Long Jump Women,Barcelona,1992,B,Jackie JOYNER,USA,07.07
 W,Long Jump Women,Montreal,1976,G,Angela VOIGT,GDR,6.72
 W,Long Jump Women,Montreal,1976,S,Catherine Laverne MCMILLAN,USA,6.66
 W,Long Jump Women,Montreal,1976,B,Lidia ALFEEVA,URS,6.6
@@ -2279,51 +2279,51 @@ W,Long Jump Women,Helsinki,1952,G,Yvette WILLIAMS,NZL,6.24
 W,Long Jump Women,Helsinki,1952,S,Aleksandra CHUDINA,URS,6.14
 W,Long Jump Women,Helsinki,1952,B,Shirley CAWLEY,GBR,5.92
 W,Long Jump Women,London,2012,G,Brittney REESE,USA,7.12
-W,Long Jump Women,London,2012,S,Elena SOKOLOVA,RUS,7.07
+W,Long Jump Women,London,2012,S,Elena SOKOLOVA,RUS,07.07
 W,Long Jump Women,London,2012,B,Janay DELOACH,USA,6.89
-W,Long Jump Women,Athens,2004,G,Tatyana LEBEDEVA,RUS,7.07
-W,Long Jump Women,Athens,2004,S,Irina SIMAGINA,RUS,7.05
-W,Long Jump Women,Athens,2004,B,Tatyana KOTOVA,RUS,7.05
+W,Long Jump Women,Athens,2004,G,Tatyana LEBEDEVA,RUS,07.07
+W,Long Jump Women,Athens,2004,S,Irina SIMAGINA,RUS,07.05
+W,Long Jump Women,Athens,2004,B,Tatyana KOTOVA,RUS,07.05
 W,Long Jump Women,Atlanta,1996,G,Chioma AJUNWA,NGR,7.12
-W,Long Jump Women,Atlanta,1996,S,Fiona MAY,ITA,7.02
+W,Long Jump Women,Atlanta,1996,S,Fiona MAY,ITA,07.02
 W,Long Jump Women,Atlanta,1996,B,Jackie JOYNER,USA,7.0
-W,Long Jump Women,Moscow,1980,G,Tatiana KOLPAKOVA,URS,7.06
-W,Long Jump Women,Moscow,1980,S,Brigitte WUJAK,GDR,7.04
-W,Long Jump Women,Moscow,1980,B,Tatiana SKACHKO,URS,7.01
+W,Long Jump Women,Moscow,1980,G,Tatiana KOLPAKOVA,URS,07.06
+W,Long Jump Women,Moscow,1980,S,Brigitte WUJAK,GDR,07.04
+W,Long Jump Women,Moscow,1980,B,Tatiana SKACHKO,URS,07.01
 W,Long Jump Women,Tokyo,1964,G,Mary RAND,GBR,6.76
 W,Long Jump Women,Tokyo,1964,S,Irena KIRSZENSTEIN,POL,6.6
 W,Long Jump Women,Tokyo,1964,B,Tatyana SHCHELKANOVA,URS,6.42
-W,Marathon Women,Rio,2016,G,Jemima Jelagat SUMGONG,KEN,2:24:04
-W,Marathon Women,Rio,2016,S,Eunice Jepkirui KIRWA,BRN,2:24:13
-W,Marathon Women,Rio,2016,B,Mare DIBABA,ETH,2:24:30
-W,Marathon Women,Beijing,2008,G,Constantina TOMESCU,ROU,2h26:44
-W,Marathon Women,Beijing,2008,S,Catherine NDEREBA,KEN,2h27:06
-W,Marathon Women,Beijing,2008,B,Chunxiu ZHOU,CHN,2h27:07
-W,Marathon Women,Sydney,2000,G,Naoko TAKAHASHI,JPN,02h23:14
-W,Marathon Women,Sydney,2000,S,Lidia SIMON,ROU,02h23:22
-W,Marathon Women,Sydney,2000,B,Joyce CHEPCHUMBA,KEN,02h24:45
-W,Marathon Women,Barcelona,1992,G,Valentina YEGOROVA,EUN,2:32:41
-W,Marathon Women,Barcelona,1992,S,Yuko ARIMORI,JPN,2:32:49
-W,Marathon Women,Barcelona,1992,B,Lorraine MOLLER,NZL,2:33:59
-W,Marathon Women,Los Angeles,1984,G,Joan BENOIT,USA,2:24:52
-W,Marathon Women,Los Angeles,1984,S,Grete ANDERSEN,NOR,2:26:18
-W,Marathon Women,Los Angeles,1984,B,Rosa MOTA,POR,2:26:57
-W,Marathon Women,London,2012,G,Tiki GELANA,ETH,2:23:07
-W,Marathon Women,London,2012,S,Priscah JEPTOO,KEN,2:23:12
-W,Marathon Women,London,2012,B,Tatyana PETROVA ARKHIPOVA,RUS,2:23:29
-W,Marathon Women,Athens,2004,G,Mizuki NOGUCHI,JPN,2h26:20
-W,Marathon Women,Athens,2004,S,Catherine NDEREBA,KEN,2h26:32
-W,Marathon Women,Athens,2004,B,Deena KASTOR,USA,2h27:20
-W,Marathon Women,Atlanta,1996,G,Fatuma ROBA,ETH,2:26:05
-W,Marathon Women,Atlanta,1996,S,Valentina YEGOROVA,RUS,2:28:05
-W,Marathon Women,Atlanta,1996,B,Yuko ARIMORI,JPN,2:28:39
-W,Marathon Women,Seoul,1988,G,Rosa MOTA,POR,2:25:40
-W,Marathon Women,Seoul,1988,S,Lisa ONDIEKI,AUS,2:25:53
-W,Marathon Women,Seoul,1988,B,Katrin DÃRRE,GDR,2:26:21
+W,Marathon Women,Rio,2016,G,Jemima Jelagat SUMGONG,KEN,02:24:04
+W,Marathon Women,Rio,2016,S,Eunice Jepkirui KIRWA,BRN,02:24:13
+W,Marathon Women,Rio,2016,B,Mare DIBABA,ETH,02:24:30
+W,Marathon Women,Beijing,2008,G,Constantina TOMESCU,ROU,02:26:44
+W,Marathon Women,Beijing,2008,S,Catherine NDEREBA,KEN,02:27:06
+W,Marathon Women,Beijing,2008,B,Chunxiu ZHOU,CHN,02:27:07
+W,Marathon Women,Sydney,2000,G,Naoko TAKAHASHI,JPN,02:23:14
+W,Marathon Women,Sydney,2000,S,Lidia SIMON,ROU,02:23:22
+W,Marathon Women,Sydney,2000,B,Joyce CHEPCHUMBA,KEN,02:24:45
+W,Marathon Women,Barcelona,1992,G,Valentina YEGOROVA,EUN,02:32:41
+W,Marathon Women,Barcelona,1992,S,Yuko ARIMORI,JPN,02:32:49
+W,Marathon Women,Barcelona,1992,B,Lorraine MOLLER,NZL,02:33:59
+W,Marathon Women,Los Angeles,1984,G,Joan BENOIT,USA,02:24:52
+W,Marathon Women,Los Angeles,1984,S,Grete ANDERSEN,NOR,02:26:18
+W,Marathon Women,Los Angeles,1984,B,Rosa MOTA,POR,02:26:57
+W,Marathon Women,London,2012,G,Tiki GELANA,ETH,02:23:07
+W,Marathon Women,London,2012,S,Priscah JEPTOO,KEN,02:23:12
+W,Marathon Women,London,2012,B,Tatyana PETROVA ARKHIPOVA,RUS,02:23:29
+W,Marathon Women,Athens,2004,G,Mizuki NOGUCHI,JPN,02:26:20
+W,Marathon Women,Athens,2004,S,Catherine NDEREBA,KEN,02:26:32
+W,Marathon Women,Athens,2004,B,Deena KASTOR,USA,02:27:20
+W,Marathon Women,Atlanta,1996,G,Fatuma ROBA,ETH,02:26:05
+W,Marathon Women,Atlanta,1996,S,Valentina YEGOROVA,RUS,02:28:05
+W,Marathon Women,Atlanta,1996,B,Yuko ARIMORI,JPN,02:28:39
+W,Marathon Women,Seoul,1988,G,Rosa MOTA,POR,02:25:40
+W,Marathon Women,Seoul,1988,S,Lisa ONDIEKI,AUS,02:25:53
+W,Marathon Women,Seoul,1988,B,Katrin DÃRRE,GDR,02:26:21
 W,Pole Vault Women,Rio,2016,G,Ekaterini STEFANIDI,GRE,4.85
 W,Pole Vault Women,Rio,2016,S,Sandi MORRIS,USA,4.85
 W,Pole Vault Women,Rio,2016,B,Eliza MCCARTNEY,NZL,4.8
-W,Pole Vault Women,Beijing,2008,G,Yelena ISINBAEVA,RUS,5.05
+W,Pole Vault Women,Beijing,2008,G,Yelena ISINBAEVA,RUS,05.05
 W,Pole Vault Women,Beijing,2008,S,Jennifer SUHR,USA,4.8
 W,Pole Vault Women,Beijing,2008,B,Svetlana FEOFANOVA,RUS,4.75
 W,Pole Vault Women,Sydney,2000,G,Stacy DRAGILA,USA,4.6

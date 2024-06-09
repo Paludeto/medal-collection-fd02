@@ -12,7 +12,7 @@ int main() {
     
     arq = fopen("data/medalhas.dat", "r+b");
 
-    numMedalhas = fopen("data/num.dat", "rb");  
+    numMedalhas = fopen("data/num.dat", "r+b");  
 
     //Se for a primeira execução do programa...
     if (arq == NULL) {   
@@ -28,7 +28,6 @@ int main() {
         parseArquivo(arq, numLinhas, medalhas);
 
         escreveBinario(medalhas, numLinhas);
-        printf("funciona");
 
         //Menu vai aqui
 
@@ -36,32 +35,24 @@ int main() {
     
     
     }
-   
-    numLinhas = leLinhasBinario(numMedalhas);
+
+    //Favor manter, se não, dará segfault na primeira execução
+    //checa se não é a primeira execução antes de usar o binário numMedalhas
+    if (numMedalhas != NULL) {
+
+        numLinhas = leLinhasBinario(numMedalhas);
     
-    int *tamanhoMedalhas = &numLinhas;
+        int *tamanhoMedalhas = &numLinhas;
 
-    Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
+        Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
 
-    leBinario(arq,medalhas,*tamanhoMedalhas);
+        leBinario(arq,medalhas,*tamanhoMedalhas);
+                                                                                                            
+        free(medalhas); 
 
-    //Menu Vai aqui
-    
-    // teste
-    inserirAtleta(medalhas,tamanhoMedalhas);
-    
-    printf("%s",medalhas[0].nome);
-
-    removeAtleta(medalhas,tamanhoMedalhas);
-    //teste, confirma tamanho do vetor de structs
-    printf("%d",numLinhas);
-    //teste, confirma deslocamento do vetor
-    printf("%s",medalhas[0].nome);
-                                                                                                          
-    free(medalhas); 
-
-    return 0;
     }
-    
-    
+   
+   
+    return 0;
 
+}

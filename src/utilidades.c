@@ -4,10 +4,12 @@
 #include <string.h>
 
 
-void recebeString(char string[]){
+void recebeString(char string[TAM_STRING]){
 
-fgets(string, 21, stdin);
-string[strcspn(string,"\n")]='\0';
-setbuf(stdin, NULL);
+    fgets(string, TAM_STRING, stdin);
+    string[strcspn(string,"\n")]='\0';
+    setbuf(stdin, NULL);
+
+    return;
 
 }
