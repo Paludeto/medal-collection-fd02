@@ -179,7 +179,7 @@ int buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
 }
 
-void modificaAtleta(Medalha** medalhas, int tamanhoArray) { 
+void modificaAtleta(Medalha **medalhas, int tamanhoArray) { 
 
     enum {
         GENERO = 1,
