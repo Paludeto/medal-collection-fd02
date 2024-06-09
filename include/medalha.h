@@ -25,6 +25,8 @@ void escreveBinario( Medalha*, int numLinhas);
 
 void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 
+void exportaCsv(FILE *arq, Medalha* medalhas, int numLinhas);
+
 int leLinhasBinario(FILE * numMedalhas);
 
 void inserirAtleta(Medalha* medalhas, int *tamanhoArray);

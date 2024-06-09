@@ -11,10 +11,8 @@ int linhasArquivo(FILE *arq) {
     int contaLinhas = 1;
 
     if (arq == NULL) {
-
         fprintf(stderr, "Erro ao abrir o arquivo\n");
         exit(EXIT_FAILURE);  
-
     }
 
    char c;
@@ -100,6 +98,26 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
 
     }
     
+    return;
+
+}
+
+void exportaCsv(FILE *arq, Medalha* medalhas, int numLinhas) {
+
+    arq = fopen("data/novoMedalhas.csv", "w");
+
+    if (arq == NULL) {
+        fprintf(stderr, "Erro ao abrir o arquivo\n");
+        exit(EXIT_FAILURE);
+    }
+
+    for (int i = 0; i < numLinhas; i++) {
+        fprintf(arq, "%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
+                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
+    }
+
+    fclose(arq);
+
     return;
 
 }

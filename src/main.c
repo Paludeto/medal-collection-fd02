@@ -47,8 +47,10 @@ int main() {
         Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
 
         leBinario(arq,medalhas,*tamanhoMedalhas);
-                                                                                                            
-        free(medalhas); 
+
+        exportaCsv(arq, medalhas, numLinhas);
+
+        free(medalhas);  
 
     }
    
