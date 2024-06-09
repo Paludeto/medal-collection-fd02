@@ -164,12 +164,14 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
 
 }
 
+void exibeCabecalho() {
+    printf("%-5s\t | %-20s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
+        "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAíS", "RESULTADO");   
+}
+
 void exibeAtleta(Medalha **medalhas, int indice) {
 
-    printf("%-5s\t | %-15s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
-        "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAíS", "RESULTADO");   
-    
-    printf("%-5c\t | %-15s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
+    printf("%-5c\t | %-20s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
         (*medalhas)[indice].genero, (*medalhas)[indice].modalidade, (*medalhas)[indice].cidade, (*medalhas)[indice].ano, 
         (*medalhas)[indice].gbs, (*medalhas)[indice].nome, (*medalhas)[indice].pais, (*medalhas)[indice].resultado);  
 
@@ -185,6 +187,8 @@ void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
     char nomeBuscado[TAM_STRING];
     recebeString(nomeBuscado);
+
+    exibeCabecalho();
 
     for (int i = 0; i < tamanhoArray; i++) {
         if (strcmp(nomeBuscado, (*medalhas)[i].nome) == 0) {
@@ -226,6 +230,7 @@ void modificaAtleta(Medalha **medalhas, int tamanhoArray) {
         scanf("%d", &indice);
     }
 
+    exibeCabecalho();
     exibeAtleta(medalhas, indice);
 
     printf("Qual campo do(a) atleta você deseja modificar?\n");
@@ -344,5 +349,36 @@ void removeAtleta(Medalha *medalhas, int *tamanhoArray) {
     }
 
     *tamanhoArray = *tamanhoArray - 1;
+
+}
+
+void exibeOlimpiada(Medalha *medalhas, int tamanhoArray) {
+
+    int encontrado = 1;
+
+    char cidade[TAM_STRING];
+    int ano;
+
+    printf("Digite o nome da cidade em que as olímpiadas ocorreram\n");
+    recebeString(cidade);
+
+    printf("Digite o ano em que as olímpiadas ocorreram\n");
+    scanf("%d", &ano);
+    setbuf(stdin, NULL);
+
+    exibeCabecalho();
+
+    for (int i = 0; i < tamanhoArray; i++) {
+        if ((strcmp(cidade, medalhas[i].cidade) == 0 && ano == medalhas[i].ano) && (strcmp("null", medalhas[i].nome) != 0)) {
+            exibeAtleta(&medalhas, i);
+            encontrado = 0;
+        }
+    }
+
+    if (encontrado == 1) {
+        printf("Nenhuma correspondência encontrada!\n");
+    }
+
+    return;
 
 }

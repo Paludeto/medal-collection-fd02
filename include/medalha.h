@@ -33,10 +33,14 @@ void inserirAtleta(Medalha* medalhas, int *tamanhoArray);
 
 void buscaAtleta(Medalha **medalhas, int tamanhoArray);
 
+void exibeCabecalho();
+
 void exibeAtleta(Medalha **medalhas, int indice);
 
 void modificaAtleta(Medalha **medalhas, int tamanhoArray);
 
 void removeAtleta(Medalha * medalhas,int *tamanhoArray);
+
+void exibeOlimpiada(Medalha *medalhas, int tamanhoArray);
 
 #endif

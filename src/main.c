@@ -27,6 +27,7 @@ int main() {
        
         parseArquivo(arq, numLinhas, medalhas);
 
+        //iniciou o programa
         escreveBinario(medalhas, numLinhas);
 
         //Menu vai aqui
@@ -46,11 +47,11 @@ int main() {
 
         Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
 
-        leBinario(arq,medalhas,*tamanhoMedalhas);
-
+        //iniciou
+        leBinario(arq, medalhas, *tamanhoMedalhas);
+        
+        //saiu do programa
         escreveBinario(medalhas, numLinhas);
-
-        buscaAtleta(&medalhas, numLinhas);
 
         free(medalhas);  
 
