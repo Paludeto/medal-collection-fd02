@@ -165,13 +165,13 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
 }
 
 void exibeCabecalho() {
-    printf("%-5s\t | %-20s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
+    printf("%-5s\t | %-25s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
         "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAíS", "RESULTADO");   
 }
 
 void exibeAtleta(Medalha **medalhas, int indice) {
 
-    printf("%-5c\t | %-20s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
+    printf("%-5c\t | %-25s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
         (*medalhas)[indice].genero, (*medalhas)[indice].modalidade, (*medalhas)[indice].cidade, (*medalhas)[indice].ano, 
         (*medalhas)[indice].gbs, (*medalhas)[indice].nome, (*medalhas)[indice].pais, (*medalhas)[indice].resultado);  
 
