@@ -11,6 +11,7 @@ output/
 *.d
 
 # Object files
+obj/
 *.o
 *.ko
 *.elf
