@@ -2,14 +2,22 @@
 output/
 .vscode/
 
+# Files without extension
+*
+!*.*
+!*/
+
 # Prerequisites
 *.d
 
 # Object files
 *.o
 *.ko
-*.obj
 *.elf
+
+# Binary files
+*.dat
+*.bin
 
 # Linker output
 *.ilk
