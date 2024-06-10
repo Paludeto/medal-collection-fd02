@@ -220,6 +220,8 @@ void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
     free(vetorMedalhas);
 
+    return;
+
 }
 
 void modificaAtleta(Medalha **medalhas, int tamanhoArray) { 
@@ -365,6 +367,8 @@ void removeAtleta(Medalha *medalhas, int *tamanhoArray) {
     }
 
     *tamanhoArray = *tamanhoArray - 1;
+
+    return;
 
 }
 
