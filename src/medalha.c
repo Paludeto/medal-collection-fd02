@@ -182,6 +182,7 @@ void exibeAtleta(Medalha **medalhas, int indice) {
 void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
     int totalMedalhas = 0;
+    int *vetorMedalhas = NULL;
 
     printf("Digite o nome do atleta a ser buscado\n");
 
@@ -192,17 +193,32 @@ void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
     for (int i = 0; i < tamanhoArray; i++) {
         if (strcmp(nomeBuscado, (*medalhas)[i].nome) == 0) {
-            printf("Índice da medalha: %d\n", i);
-            exibeAtleta(medalhas, i);
             totalMedalhas++;
+            vetorMedalhas = realloc(vetorMedalhas, totalMedalhas * sizeof(int));
+
+            if (vetorMedalhas == NULL) {
+                fprintf(stderr, "Erro de alocação de memória\n");
+                exit(EXIT_FAILURE);
+            }
+            
+            vetorMedalhas[totalMedalhas - 1] = i;
+            exibeAtleta(medalhas, i);
         }
     }
+
+    printf("Indíces das medalhas:\n[ ");
+    for (int i = 0; i < totalMedalhas; i++) {
+        printf("%d ", vetorMedalhas[i]);
+    }
+    printf("]\n");
 
     if (totalMedalhas == 0) {
         printf("Nenhuma medalha encontrada!\n");
     } else {
         printf("Total de medalhas: %d\n", totalMedalhas);
     }
+
+    free(vetorMedalhas);
 
 }
 

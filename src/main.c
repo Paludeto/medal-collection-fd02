@@ -50,6 +50,8 @@ int main() {
         //iniciou
         leBinario(arq, medalhas, *tamanhoMedalhas);
         
+        buscaAtleta(&medalhas, numLinhas);
+
         //saiu do programa
         escreveBinario(medalhas, numLinhas);
 
