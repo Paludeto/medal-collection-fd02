@@ -6,6 +6,13 @@
 #include <string.h>
 
 
+
+/**
+ * @brief Le a quantidade de linhas de um arquivo CSV.
+ * 
+ * @param arq 
+ * @return A quantidade de linhas.
+ */
 int linhasArquivo(FILE *arq) {
 
     int contaLinhas = 1;
@@ -28,6 +35,15 @@ int linhasArquivo(FILE *arq) {
     
 }
 
+
+/**
+ * @brief Faz parsing do arquivo CSV atribuindo o conteúdo entre as vírgulas
+ * a seus respectivos lugares dentro do struct.
+ * 
+ * @param arq 
+ * @param numLinhas 
+ * @param medalhas 
+ */
 void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas) {
 
     int contador = 0;
@@ -59,6 +75,13 @@ void parseArquivo(FILE *arq, int numLinhas, Medalha* medalhas) {
 
 }
 
+/**
+ * @brief Salva as medalhas em um arquivo binário, assim
+ * como o número de medalhas para leitura posterior
+ * 
+ * @param medalhas 
+ * @param numLinhas 
+ */
 void escreveBinario(Medalha* medalhas, int numLinhas) {
 
     FILE *arq_dat = fopen("data/medalhas.dat","wb");
@@ -77,6 +100,12 @@ void escreveBinario(Medalha* medalhas, int numLinhas) {
 
 }
 
+/**
+ * @brief Le o número de linhas salvos por escreveBinario()
+ * 
+ * @param numMedalhas 
+ * @return O número de medalhas
+ */
 int leLinhasBinario(FILE *numMedalhas) {
 
     int numLinhas;
@@ -87,6 +116,14 @@ int leLinhasBinario(FILE *numMedalhas) {
 
 }
 
+
+/**
+ * @brief Le todas as medalhas salvas por escreveBinario()
+ * 
+ * @param arq 
+ * @param medalhas 
+ * @param numLinhas 
+ */
 void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
     
     fread(medalhas, numLinhas, sizeof(Medalha), arq);
@@ -102,6 +139,13 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
 
 }
 
+/**
+ * @brief Cria um novo arquivo CSV com as medalhas salvas pelo usuário
+ * 
+ * @param arq 
+ * @param medalhas 
+ * @param numLinhas 
+ */
 void exportaCsv(FILE *arq, Medalha* medalhas, int numLinhas) {
 
     arq = fopen("data/novoMedalhas.csv", "w");
@@ -122,6 +166,13 @@ void exportaCsv(FILE *arq, Medalha* medalhas, int numLinhas) {
 
 }
 
+
+/**
+ * @brief Cria um atleta no struct Medalhas
+ * 
+ * @param medalhas 
+ * @param numLinhas 
+ */
 void inserirAtleta(Medalha *medalhas, int *numLinhas) {
 
     medalhas = realloc(medalhas,((*numLinhas + 1)*sizeof(Medalha)));
@@ -164,11 +215,22 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
 
 }
 
+/**
+ * @brief Mostra o cabeçalho em formato de tabela
+ * 
+ */
 void exibeCabecalho() {
     printf("%-5s\t | %-25s\t | %-15s\t | %-5s\t | %-5s\t | %-15s\t | %-15s\t | %-10s\t |\n",
         "GÊNERO", "MODALIDADE", "CIDADE", "ANO", "GBS", "NOME", "PAíS", "RESULTADO");   
 }
 
+
+/**
+ * @brief Recebe o indice de uma medalha e exibe as informações do respectivo atleta
+ * 
+ * @param medalhas 
+ * @param indice 
+ */
 void exibeAtleta(Medalha **medalhas, int indice) {
 
     printf("%-5c\t | %-25s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
@@ -179,6 +241,12 @@ void exibeAtleta(Medalha **medalhas, int indice) {
 
 }
 
+/**
+ * @brief Recebe o nome de um atleta e exibe suas informações
+ * 
+ * @param medalhas 
+ * @param tamanhoArray 
+ */
 void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
     int totalMedalhas = 0;
@@ -224,6 +292,12 @@ void buscaAtleta(Medalha **medalhas, int tamanhoArray) {
 
 }
 
+/**
+ * @brief Altera qualquer aspecto de um atleta já cadastrado
+ * 
+ * @param medalhas 
+ * @param tamanhoArray 
+ */
 void modificaAtleta(Medalha **medalhas, int tamanhoArray) { 
 
     enum {
@@ -338,6 +412,12 @@ void modificaAtleta(Medalha **medalhas, int tamanhoArray) {
     
 }
 
+/**
+ * @brief Remove um atleta do struct e realoca a quantidade de medalhas de acordo
+ * 
+ * @param medalhas 
+ * @param tamanhoArray 
+ */
 void removeAtleta(Medalha *medalhas, int *tamanhoArray) {
 
     int indice;
@@ -366,12 +446,19 @@ void removeAtleta(Medalha *medalhas, int *tamanhoArray) {
 
     }
 
-    *tamanhoArray = *tamanhoArray - 1;
+    *tamanhoArray = *tamanhoArray - 1 ;
 
+    medalhas = realloc(medalhas,((*tamanhoArray)*sizeof(Medalha)));
     return;
 
 }
 
+/**
+ * @brief Exibe informações sobre uma Olimpiada especifica
+ * 
+ * @param medalhas 
+ * @param tamanhoArray 
+ */
 void exibeOlimpiada(Medalha *medalhas, int tamanhoArray) {
 
     int encontrado = 1;

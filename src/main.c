@@ -12,7 +12,7 @@ int main() {
     
     arq = fopen("data/medalhas.dat", "r+b");
 
-    numMedalhas = fopen("data/num.dat", "r+b");  
+    numMedalhas = fopen("data/num.dat", "rb");  
 
     //Se for a primeira execução do programa...
     if (arq == NULL) {   
@@ -27,7 +27,6 @@ int main() {
        
         parseArquivo(arq, numLinhas, medalhas);
 
-        //iniciou o programa
         escreveBinario(medalhas, numLinhas);
 
         //Menu vai aqui
@@ -36,7 +35,7 @@ int main() {
     
     
     }
-
+   
     //Favor manter, se não, dará segfault na primeira execução
     //checa se não é a primeira execução antes de usar o binário numMedalhas
     if (numMedalhas != NULL) {

@@ -5,6 +5,10 @@
 #include <stdlib.h>
 #include "utilidades.h"
 
+/**
+ * @brief Estrutura inicial de medalhas
+ * 
+ */
 typedef struct Medalha {
     char nome[TAM_STRING]; 
     char pais[TAM_STRING];
@@ -17,6 +21,8 @@ typedef struct Medalha {
     int codigo;
 } Medalha;
 
+
+//Funções para leitura e escrita dos arquivos
 int linhasArquivo(FILE *);
 
 void parseArquivo(FILE *, int, Medalha*);
@@ -28,6 +34,9 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas);
 void exportaCsv(FILE *arq, Medalha* medalhas, int numLinhas);
 
 int leLinhasBinario(FILE * numMedalhas);
+
+
+//Funções para acessar e modificar informações do catálogo de medalhas
 
 void inserirAtleta(Medalha* medalhas, int *tamanhoArray);
 
