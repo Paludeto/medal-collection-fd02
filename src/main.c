@@ -48,7 +48,7 @@ int main() {
          int *numLinhas2 = &numLinhas;
 
         Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
-         Medalha **medalhas2 = &medalhas;
+        Medalha **medalhas2 = &medalhas;
 
         //iniciou
         leBinario(arq, medalhas, *tamanhoMedalhas);
