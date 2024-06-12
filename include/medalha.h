@@ -54,6 +54,6 @@ void exibeOlimpiada(Medalha *medalhas, int tamanhoArray);
 
 //Menu
 
-void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2);
+void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2);
 
 #endif

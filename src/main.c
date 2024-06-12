@@ -28,7 +28,7 @@ int main() {
        
         parseArquivo(arq, numLinhas, medalhas);
 
-        menu (medalhas, medalhas2, numLinhas, numLinhas2);
+        menu (arq, medalhas, medalhas2, numLinhas, numLinhas2);
 
         escreveBinario(medalhas, numLinhas);
 
@@ -53,7 +53,7 @@ int main() {
         //iniciou
         leBinario(arq, medalhas, *tamanhoMedalhas);
         
-        menu (medalhas, medalhas2, numLinhas, numLinhas2);
+        menu (arq, medalhas, medalhas2, numLinhas, numLinhas2);
        // buscaAtleta(&medalhas, numLinhas);
 
         //saiu do programa

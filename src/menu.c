@@ -40,7 +40,7 @@ void sair(){
     exit(0);
 }
 
-void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
+void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
 
     int opcao = 0;
 
@@ -51,7 +51,8 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
         {3, "Modificar atleta", modificaAtleta},
         {4, "Remover medalha", removeAtleta},
         {5, "Exibe olimpiada", exibeOlimpiada},
-        {6, "Sair", sair}
+        {6, "Exportar CSV", exportaCsv},
+        {7, "Sair", sair}
     };
 
     
@@ -65,7 +66,7 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
         printf("| %*s | %*s |\n",
                 -LARG, "Opcao",
                 -LARG/4, "Digite");
-        for (int i = 0; i < 6; i++)
+        for (int i = 0; i < 7; i++)
         {
             printf("| " BLU "%*s " RESET "| " BLU " %*d" RESET "|\n",
                 -LARG, menu[i].acao,
@@ -109,7 +110,7 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
         
         case 6:
 
-            menu[opcao - 1].funcao(medalhas, indice);
+            menu[opcao - 1].funcao(arq, medalhas, indice);
             break;
         
 
@@ -117,6 +118,6 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
             break;
         }
 
-    } while (opcao != 6);
+    } while (opcao != 7);
 
 }
