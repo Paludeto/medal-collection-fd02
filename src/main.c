@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main() {
 
     FILE *arq;
@@ -19,20 +18,23 @@ int main() {
 
         arq = fopen("data/medalhas.csv","r");
         
-        numLinhas = linhasArquivo(arq); 
+        numLinhas = linhasArquivo(arq);
+        int *numLinhas2 = &numLinhas;
 
         rewind(arq);
         
         Medalha *medalhas = (Medalha *) malloc(numLinhas * sizeof(Medalha));
+        Medalha **medalhas2 = &medalhas;
        
         parseArquivo(arq, numLinhas, medalhas);
+
+        menu (medalhas, medalhas2, numLinhas, numLinhas2);
 
         escreveBinario(medalhas, numLinhas);
 
         //Menu vai aqui
 
         free(medalhas);
-    
     
     }
    
@@ -43,13 +45,16 @@ int main() {
         numLinhas = leLinhasBinario(numMedalhas);
     
         int *tamanhoMedalhas = &numLinhas;
+         int *numLinhas2 = &numLinhas;
 
         Medalha* medalhas=(Medalha*) malloc (numLinhas* sizeof(Medalha));
+         Medalha **medalhas2 = &medalhas;
 
         //iniciou
         leBinario(arq, medalhas, *tamanhoMedalhas);
         
-        buscaAtleta(&medalhas, numLinhas);
+        menu (medalhas, medalhas2, numLinhas, numLinhas2);
+       // buscaAtleta(&medalhas, numLinhas);
 
         //saiu do programa
         escreveBinario(medalhas, numLinhas);

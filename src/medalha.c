@@ -179,6 +179,8 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
     
     *numLinhas = *numLinhas+1;
 
+    setbuf(stdin, NULL);
+
     printf("Insira o genero do atleta:");
     scanf("%c",&medalhas[*numLinhas].genero);
 
