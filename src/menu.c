@@ -13,7 +13,7 @@
 #define WHT "\e[0;37m" // Branco
 #define RESET "\e[0m"
 
-#define LARG 10
+#define LARG 20
 
 typedef struct {
     int id;
@@ -55,66 +55,72 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
         {7, "Sair", sair}
     };
 
-    // Tocar som de menu aparecendo na tela
-    //tocarSom(0);
-
-    // Printa o menu na tela
-    printf(YEL " --------- MENU ------\n" RESET);
-    printf("| %*s | %*s |\n",
-            -LARG, "Opcao",
-            -LARG/2, "Digite");
-    for (int i = 0; i < 4; i++)
-    {
-        printf("| " BLU "%*s " RESET "| " BLU " %*d" RESET "|\n",
-            -LARG, menu[i].acao,
-            -LARG/2 - 1, menu[i].id);
-    }
     
-    // Opção do menu
     do
     {
+        // Tocar som de menu aparecendo na tela
+        //tocarSom(0);
+
+        // Printa o menu na tela
+        printf(YEL " --------- MENU ----------------\n" RESET);
+        printf("| %*s | %*s |\n",
+                -LARG, "Opcao",
+                -LARG/4, "Digite");
+        for (int i = 0; i < 7; i++)
+        {
+            printf("| " BLU "%*s " RESET "| " BLU " %*d" RESET "|\n",
+                -LARG, menu[i].acao,
+                -LARG/4 - 1, menu[i].id);
+        }
+        
+        // Opção do menu       
         printf("\nDigite a opção (número) de menu: ");
         scanf("%d", &opcao);
-    } while (opcao < 0 || opcao > 6);
+        setbuf(stdin, NULL);
     
-    // Som após escolha do menu
-    //tocarSom(opcao);
+    
+        // Som após escolha do menu
+        //tocarSom(opcao);
 
-    switch (opcao)
-    {
-    // inserirAtleta(Medalha *medalhas, int *numLinhas)
-    case 1: 
-        menu[opcao - 1].funcao(medalhas, indice2);
-        break;
-    // buscaAtleta(Medalha **medalhas, int tamanhoArray)
-    case 2:
-        menu[opcao - 1].funcao(medalhas2, indice);
-        break;
-    // exibeAtleta(Medalha **medalhas, int indice)
-    case 3:
-        menu[opcao - 1].funcao(medalhas2, indice);
-        break;
-    // modificaAtleta(Medalha **medalhas, int tamanhoArray)
-    case 4:
-        menu[opcao - 1].funcao(medalhas2, indice);
-        break;
+        switch (opcao)
+        {
+        // inserirAtleta(Medalha *medalhas, int *numLinhas)
+        case 1: 
+            menu[opcao - 1].funcao(medalhas, indice2);
+            break;
+        // buscaAtleta(Medalha **medalhas, int tamanhoArray)
+        case 2:
+            menu[opcao - 1].funcao(medalhas2, indice);
+            break;
+        // exibeAtleta(Medalha **medalhas, int indice)
+        case 3:
+            menu[opcao - 1].funcao(medalhas2, indice);
+            break;
+        // modificaAtleta(Medalha **medalhas, int tamanhoArray)
+        case 4:
+            menu[opcao - 1].funcao(medalhas2, indice);
+            break;
 
-    // removeAtleta(Medalha * medalhas,int *tamanhoArray);
-    case 5:
-        menu[opcao - 1].funcao(medalhas, indice);
-        break;
+        // removeAtleta(Medalha * medalhas,int *tamanhoArray);
+        case 5:
 
-    // exibeOlimpiada(Medalha *medalhas, int tamanhoArray)
-    case 6:
-        menu[opcao - 1].funcao(medalhas, indice);
-        break;
-    // sair
-    case 7:
-        menu[opcao - 1].funcao();
-        break;
+            menu[opcao - 1].funcao(medalhas, indice);
+            break;
 
-    default:
-        break;
-    }
+        // exibeOlimpiada(Medalha *medalhas, int tamanhoArray)
+        case 6:
+
+            menu[opcao - 1].funcao(medalhas, indice);
+            break;
+        // sair
+        case 7:
+            menu[opcao - 1].funcao();
+            break;
+
+        default:
+            break;
+        }
+
+    } while (opcao != 7);
 
 }

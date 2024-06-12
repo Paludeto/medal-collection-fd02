@@ -128,13 +128,6 @@ void leBinario(FILE *arq, Medalha* medalhas, int numLinhas) {
     
     fread(medalhas, numLinhas, sizeof(Medalha), arq);
     
-    for (int i = 0; i < numLinhas; i++) {  
-
-        printf("%c, %s, %s, %d, %c, %s, %s, %s\n", medalhas[i].genero, medalhas[i].modalidade, medalhas[i].cidade, medalhas[i].ano, medalhas[i].gbs,
-                    medalhas[i].nome, medalhas[i].pais, medalhas[i].resultado);
-
-    }
-    
     return;
 
 }
@@ -182,7 +175,7 @@ void inserirAtleta(Medalha *medalhas, int *numLinhas) {
     setbuf(stdin, NULL);
 
     printf("Insira o genero do atleta:");
-    scanf("%c",&medalhas[*numLinhas].genero);
+    scanf("%c%*c",&medalhas[*numLinhas].genero);
 
     setbuf(stdin, NULL);
     
@@ -235,7 +228,7 @@ void exibeCabecalho() {
  */
 void exibeAtleta(Medalha **medalhas, int indice) {
 
-    printf("%-5c\t | %-25s\t | %-15s\t | %-5d\t | %-5c\t | %-15s\t | %-15s\t | %-10s\t |\n",
+    printf("%-5c | %-25s | %-15s | %-5d | %-5c | %-15s | %-15s | %-10s |\n",
         (*medalhas)[indice].genero, (*medalhas)[indice].modalidade, (*medalhas)[indice].cidade, (*medalhas)[indice].ano, 
         (*medalhas)[indice].gbs, (*medalhas)[indice].nome, (*medalhas)[indice].pais, (*medalhas)[indice].resultado);  
 
