@@ -48,11 +48,10 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
     itemMenu menu[7] = {
         {1, "Cadastrar atleta", inserirAtleta},
         {2, "Buscar atleta", buscaAtleta},
-        {3, "Exibir atleta", exibeAtleta},
-        {4, "Modificar atleta", modificaAtleta},
-        {5, "Remover atleta", removeAtleta},
-        {6, "Exibe olimpiada", exibeOlimpiada},
-        {7, "Sair", sair}
+        {3, "Modificar atleta", modificaAtleta},
+        {4, "Remover medalha", removeAtleta},
+        {5, "Exibe olimpiada", exibeOlimpiada},
+        {6, "Sair", sair}
     };
 
     
@@ -66,7 +65,7 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
         printf("| %*s | %*s |\n",
                 -LARG, "Opcao",
                 -LARG/4, "Digite");
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 6; i++)
         {
             printf("| " BLU "%*s " RESET "| " BLU " %*d" RESET "|\n",
                 -LARG, menu[i].acao,
@@ -84,43 +83,40 @@ void menu (Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2) {
 
         switch (opcao)
         {
-        // inserirAtleta(Medalha *medalhas, int *numLinhas)
+        
         case 1: 
             menu[opcao - 1].funcao(medalhas, indice2);
             break;
-        // buscaAtleta(Medalha **medalhas, int tamanhoArray)
+        
         case 2:
             menu[opcao - 1].funcao(medalhas2, indice);
             break;
-        // exibeAtleta(Medalha **medalhas, int indice)
+        
         case 3:
             menu[opcao - 1].funcao(medalhas2, indice);
             break;
-        // modificaAtleta(Medalha **medalhas, int tamanhoArray)
+        
         case 4:
             menu[opcao - 1].funcao(medalhas2, indice);
             break;
 
-        // removeAtleta(Medalha * medalhas,int *tamanhoArray);
+       
         case 5:
 
             menu[opcao - 1].funcao(medalhas, indice);
             break;
 
-        // exibeOlimpiada(Medalha *medalhas, int tamanhoArray)
+        
         case 6:
 
             menu[opcao - 1].funcao(medalhas, indice);
             break;
-        // sair
-        case 7:
-            menu[opcao - 1].funcao();
-            break;
+        
 
         default:
             break;
         }
 
-    } while (opcao != 7);
+    } while (opcao != 6);
 
 }
