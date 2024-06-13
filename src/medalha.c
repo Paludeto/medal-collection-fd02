@@ -449,7 +449,7 @@ void removeAtleta(Medalha *medalhas, int *tamanhoArray) {
 }
 
 /**
- * @brief Exibe informações sobre uma Olimpiada especifica
+ * @brief Exibe todas as medalhas e as informações de seus medalhistas uma olimpíada especifica
  * 
  * @param medalhas 
  * @param tamanhoArray 
@@ -483,4 +483,79 @@ void exibeOlimpiada(Medalha *medalhas, int tamanhoArray) {
 
     return;
 
+}
+
+/**
+ * @brief Exibe uma tabela de medalhas por países de acordo com a olimpíada digitada pelo usuário
+ * 
+ * @param medalhas 
+ * @param tamanhoArray 
+ */
+void exibeTabelaMedalhas(Medalha *medalhas, int tamanhoArray) {
+    
+    char siglas[NUM_PAISES][TAM_SIGLAS] = {
+        "USA", "KEN", "ETH", "MAR", "ITA", "GBR", "FIN", "POR", "TUN", "URS",
+        "EUA", "AUS", "TCH", "FRA", "SWE", "ERI", "BEL", "HUN", "POL", "JAM",
+        "CAN", "TTO", "BAR", "NAM", "NED", "GER", "RSA", "CUB", "BUL", "PAN",
+        "NZL", "ESP", "CHN", "GDR", "ALG", "QAT", "FRG", "LUX", "IRL", "SUI",
+        "GRE", "IND", "RUS", "ECU", "MEX", "GUA", "TAN", "NOR", "TUR", "KSA",
+        "PHI", "DOM", "PUR", "ZAM", "UGA", "SRI", "GRN", "CIV", "DEN", "JPN",
+        "BRA", "NGR", "BAH", "BWI", "BDI", "SVK", "LAT", "EUN", "SUD", "BOT",
+        "BLR", "EST", "CZE", "TPE", "KAZ", "LTU", "IRI", "TJK", "SLO", "UKR",
+        "ROU", "HAI", "KOR", "ARG", "CHI", "DJI", "YUG", "VEN", "BRN", "AUT",
+        "COL", "MOZ", "CRO", "SYR", "SRB", "ISL", "CMR"
+    };
+
+    char nomesDosPaises[NUM_PAISES][TAM_STRING] = {
+        "Estados Unidos", "Quênia", "Etiópia", "Marrocos", "Itália", "Reino Unido",
+        "Finlândia", "Portugal", "Tunísia", "União Soviética", "Estados Unidos",
+        "Austrália", "Tchecoslováquia", "França", "Suécia", "Eritreia", "Bélgica",
+        "Hungria", "Polônia", "Jamaica", "Canadá", "Trinidad e Tobago", "Barbados",
+        "Namíbia", "Países Baixos", "Alemanha", "África do Sul", "Cuba", "Bulgária",
+        "Panamá", "Nova Zelândia", "Espanha", "China", "Alemanha Oriental", "Argélia",
+        "Catar", "Alemanha Ocidental", "Luxemburgo", "Irlanda", "Suíça", "Grécia",
+        "Índia", "Rússia", "Equador", "México", "Guatemala", "Tanzânia", "Noruega",
+        "Turquia", "Arábia Saudita", "Filipinas", "República Dominicana", "Porto Rico",
+        "Zâmbia", "Uganda", "Sri Lanka", "Granada", "Costa do Marfim", "Dinamarca",
+        "Japão", "Brasil", "Nigéria", "Bahamas", "Índias Ocidentais Britânicas", "Burundi",
+        "Eslováquia", "Letônia", "Equipe Unificada", "Sudão", "Botsuana", "Bielorrússia",
+        "Estônia", "República Tcheca", "Taiwan", "Cazaquistão", "Lituânia", "Irã",
+        "Tajiquistão", "Eslovênia", "Ucrânia", "Romênia", "Haiti", "Coreia do Sul",
+        "Argentina", "Chile", "Djibuti", "Iugoslávia", "Venezuela", "Brunei", "Áustria",
+        "Colômbia", "Moçambique", "Croácia", "Síria", "Sérvia", "Islândia", "Camarões"
+    };
+
+    int totalG = 0;
+    int totalB = 0;
+    int totalS = 0;
+
+    char cidade[TAM_STRING];
+    int ano;
+
+    printf("Digite o nome da cidade em que as olímpiadas ocorreram\n");
+    recebeString(cidade);
+
+    printf("Digite o ano em que as olímpiadas ocorreram\n");
+    scanf("%d", &ano);
+    setbuf(stdin, NULL);
+
+    printf("%-10s\t | %-40s\t | %-5s\t | %-5s\t | %-5s\t\n", "SIGLA", "PAÍS", "🥇", "🥈", "🥉");
+
+    for (int i = 0; i < NUM_PAISES; i++) {
+        for (int j = 0; j < tamanhoArray; j++) { 
+            if ((strcmp(cidade, medalhas[j].cidade) == 0 && ano == medalhas[j].ano) && (strcmp("null", medalhas[j].nome) != 0) && (strcmp(siglas[i], medalhas[j].pais) == 0)) {
+                if (medalhas[j].gbs == 'G') {
+                    totalG++;
+                } else if (medalhas[j].gbs == 'B') {
+                    totalB++;
+                } else {
+                    totalS++;
+                }
+            }
+        }
+
+        printf("%-10s\t | %-40s\t | %-5d | %-5d | %-5d\n", siglas[i], nomesDosPaises[i], totalG, totalS, totalB);
+
+        totalG = totalB = totalS = 0;
+    }
 }

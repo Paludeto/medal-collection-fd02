@@ -52,6 +52,8 @@ void removeAtleta(Medalha * medalhas,int *tamanhoArray);
 
 void exibeOlimpiada(Medalha *medalhas, int tamanhoArray);
 
+void exibeTabelaMedalhas(Medalha *medalhas, int tamanhoArray);
+
 //Menu
 
 void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *indice2);

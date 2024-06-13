@@ -50,7 +50,7 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
         {2, "Buscar atleta", buscaAtleta},
         {3, "Modificar atleta", modificaAtleta},
         {4, "Remover medalha", removeAtleta},
-        {5, "Exibe olimpiada", exibeOlimpiada},
+        {5, "Exibe olimpiada", exibeTabelaMedalhas},
         {6, "Exportar CSV", exportaCsv},
         {7, "Sair", sair}
     };
@@ -113,7 +113,6 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
             menu[opcao - 1].funcao(arq, medalhas, indice);
             break;
         
-
         default:
             break;
         }
