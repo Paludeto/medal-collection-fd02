@@ -54,7 +54,6 @@ int main() {
         leBinario(arq, medalhas, *tamanhoMedalhas);
         
         menu (arq, medalhas, medalhas2, numLinhas, numLinhas2);
-       // buscaAtleta(&medalhas, numLinhas);
 
         //saiu do programa
         escreveBinario(medalhas, numLinhas);

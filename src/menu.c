@@ -98,7 +98,7 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
             break;
         
         case 4:
-            menu[opcao - 1].funcao(medalhas2, indice);
+            menu[opcao - 1].funcao(medalhas, indice2);
             break;
 
        
