@@ -1,4 +1,5 @@
 #include "../include/medalha.h"
+#include "../include/gui.h"
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -54,6 +55,8 @@ int main() {
         leBinario(arq, medalhas, *tamanhoMedalhas);
         
         menu (arq, medalhas, medalhas2, numLinhas, numLinhas2);
+        
+        fatoCurioso();
 
         //saiu do programa
         escreveBinario(medalhas, numLinhas);
@@ -61,7 +64,6 @@ int main() {
         free(medalhas);  
 
     }
-   
    
     return 0;
 
