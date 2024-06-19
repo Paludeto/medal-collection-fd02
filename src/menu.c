@@ -1,4 +1,5 @@
 #include "../include/medalha.h"
+#include "../include/gui.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
@@ -45,14 +46,15 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
     int opcao = 0;
 
     // Vetor das opções de menu
-    itemMenu menu[7] = {
+    itemMenu menu[8] = {
         {1, "Cadastrar atleta", inserirAtleta},
         {2, "Buscar atleta", buscaAtleta},
         {3, "Modificar atleta", modificaAtleta},
         {4, "Remover medalha", removeAtleta},
         {5, "Exibe olimpiada", exibeTabelaMedalhas},
         {6, "Exportar CSV", exportaCsv},
-        {7, "Sair", sair}
+        {7, "Sair", sair},
+        {8,"Fato curioso", fatoCurioso}
     };
 
     
@@ -66,7 +68,7 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
         printf("| %*s | %*s |\n",
                 -LARG, "Opcao",
                 -LARG/4, "Digite");
-        for (int i = 0; i < 7; i++)
+        for (int i = 0; i < 8; i++)
         {
             printf("| " BLU "%*s " RESET "| " BLU " %*d" RESET "|\n",
                 -LARG, menu[i].acao,
@@ -112,6 +114,8 @@ void menu (FILE *arq, Medalha *medalhas, Medalha **medalhas2, int indice, int *i
 
             menu[opcao - 1].funcao(arq, medalhas, indice);
             break;
+        case 8:   
+             menu[opcao - 1].funcao();         
         
         default:
             break;

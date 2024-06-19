@@ -56,7 +56,6 @@ int main() {
         
         menu (arq, medalhas, medalhas2, numLinhas, numLinhas2);
         
-        fatoCurioso();
 
         //saiu do programa
         escreveBinario(medalhas, numLinhas);
